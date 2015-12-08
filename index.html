@@ -9,6 +9,18 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="bower_components/Materialize/bin/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/balance.js"></script>
+    <script src="js/trabajadoresController.js"></script>
+    <script src="bower_components/angular-csv-import-tmp/dist/angular-csv-import.js"></script>
+
+
 </head>
 <body ng-controller="BalanceMainController as main">
   <nav class="light-blue lighten-1" role="navigation">
@@ -25,7 +37,9 @@
 
       <ul id="nav-mobile" class="side-nav">
         <li><a href="Trabajadores.html">Trabajadores</a></li>
-      </ul>
+      	<li><a href="Contratacion.html">Contratación</a></li>
+	<li><a href="Pago.html">Pago</a></li>
+     </ul>
       <ul id="nav-mobile" class="side-nav">
         <li><a href="Contratacion.html">Contratación</a></li>
       </ul>
@@ -56,7 +70,7 @@
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m4">
+        <div class="col s12 m4 block">
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
             <h5 class="center">Balance de trabajadores</h5>
@@ -65,21 +79,21 @@
           </div>
         </div>
 
-        <div class="col s12 m4">
+        <div class="col s12 m4 block">
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Nueva Contratación</h5>
+            <h5 class="center">Cierre del mes pago de nominas</h5>
 
-            <p class="light">De click en este elemento o utilize los navegadores superiores para tener un formulario y de forma sencilla llenar los datos necesarios para la contratacion.</p>
+            <p class="light">Se le llevara a una pagina donde introduciendo datos ud podra calcular la nomina de sus trabajadores. Personalize sus busquedas y tratamiento por grupos.</p>
           </div>
         </div>
 
-        <div class="col s12 m4">
+        <div class="col s12 m4 block">
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Cierre del mes, pago de nominas</h5>
+            <h5 class="center">Configuracion</h5>
 
-            <p class="light">Se le llevara a una pagina donde introduciendo datos ud podra calcular la nomina de sus trabajadores. Personalize sus busquedas y tratamiento por grupos.</p>
+            <p class="light">Configuracion general del sitio, customizacion de elementos.<br>Elimine o inserte columnas para trabajadores o modifique el documento de contratacion</p>
           </div>
         </div>
       </div>
@@ -91,7 +105,13 @@
 
     </div>
   </div>
-
+<style>
+.block :hover{
+    background-color:#E8E8E8;
+    background-position: 0 -15px;
+    cursor:pointer;
+}
+</style>
   <footer class="page-footer orange">
     <div class="container">
       <div class="row">
@@ -130,12 +150,6 @@
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="../../bin/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/balance.js"></script>
-  <script src="js/trabajadoresController.js"/>
-  <script src="bower_components/angular-csv-import/dist/angular-csv-import.js"></script>
-
+  
 </body>
 </html>
