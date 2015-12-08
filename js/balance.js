@@ -1,5 +1,5 @@
 (function(){
-    var app = angular.module("Balance",['ja.qr']);
+    var app = angular.module("Balance",['ngCsvImport']);
 
     //Added for CORS Support
     app.config(['$httpProvider',function($httpProvider){

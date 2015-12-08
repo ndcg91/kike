@@ -9,33 +9,49 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="bower_components/Materialize/bin/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/balance.js"></script>
+    <script src="js/trabajadoresController.js"></script>
+    <script src="bower_components/angular-csv-import-tmp/dist/angular-csv-import.js"></script>
 </head>
 <body ng-controller="TrabajadoresController as trabajadores">
 <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Balance</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Balance</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#">Trabajadores</a></li>
+            <li><a href="Trabajadores.html">Trabajadores</a></li>
         </ul>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#">Contratación</a></li>
+            <li><a href="Contratacion.html">Contratación</a></li>
         </ul>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#">Pago</a></li>
+            <li><a href="Pago.html">Pago</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-            <li><a href="#">Trabajadores</a></li>
+            <li><a href="Trabajadores.html">Trabajadores</a></li>
         </ul>
         <ul id="nav-mobile" class="side-nav">
-            <li><a href="#">Contratación</a></li>
+            <li><a href="Contratacion.html">Contratación</a></li>
         </ul>
         <ul id="nav-mobile" class="side-nav">
-            <li><a href="#">Pago</a></li>
+            <li><a href="Pago.html">Pago</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
 </nav>
-
+<ng-csv-import content="trabajadores.csv.content"
+               header="trabajadores.csv.header"
+               separator="trabajadores.separator"
+               result="trabajadores.csv.result"
+               encoding="trabajadores.encoding"
+               accept="csv.accept"></ng-csv-import>
+{{trabajadores.csv}}
+{{trabajadores.separator}}
 <footer class="page-footer orange">
     <div class="container">
         <div class="row">
@@ -74,11 +90,7 @@
 
 
 <!--  Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="../../bin/materialize.js"></script>
-<script src="js/init.js"></script>
-<script src="js/balance.js"></script>
-<script src="bower_components/angular-csv-import/dist/angular-csv-import.js"></script>
+
 
 </body>
 </html>
