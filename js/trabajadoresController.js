@@ -34,14 +34,14 @@
         };
 
         this.addWorker = function(worker){
-            var workerToAdd = {trabajador:worker};
+            var workerToAdd = {trabajador:JSON.stringify(worker)};
 
             self.worker.push(worker);
             $http({
                 method: 'POST',
                 data: $.param(workerToAdd),
                 headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
                 },
                 url: 'http://127.0.0.1:8080/api/trabajadores/add'
             }).success(function (data) {
