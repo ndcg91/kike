@@ -61,8 +61,8 @@
     <table class="responsive-table">
         <thead>
             <tr >
-                <th ng-repeat="value in trabajadores.values">
-                    {{value}}
+                <th ng-repeat="val in trabajadores.values">
+                    {{val}}
                 </th>
                 <th>
                     Editar
@@ -86,7 +86,7 @@
             <td>
                 <p>
                     <input type="checkbox" id="{{data}}_id" ng-click="trabajadores.toggleEditing(data)" />
-                    <label for="{{data}}_id">Red</label>
+                    <label for="{{data}}_id">Editar</label>
                 </p>
             </td>
             <td>
@@ -94,9 +94,9 @@
             </td>
         </tr>
         <tr ng-show="trabajadores.adding">
-            <td ng-repeat="value in trabajadores.values">
-                <input id="adding_worker" type="text" class="validate" ng-model="trabajadores.newWorker[value]">
-                <label class="active" for="adding_worker">{{value}}</label>
+            <td ng-repeat="v in trabajadores.values">
+                <input id="adding_worker" type="text" class="validate" ng-model="trabajadores.newWorker[v]">
+                <label class="active" for="adding_worker">{{v}}</label>
             </td>
         </tr>
         </tbody>

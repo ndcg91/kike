@@ -9,17 +9,25 @@
         this.separator = ";";
         this.encoding = "ISO-8859-1";
         this.newWorker = new Object();
+       // this.values = [];
+        this.worker = [];
 
-
-        this.getValues = function(){
+        this.getParams = function(){
           $http({
               method:'GET',
               url:'http://128.199.62.16:8080/api/trabajadores/getParams'
           }).success(function(data){
-              self.values = data;
+              console.log(data.parameters);
+              var parameters = data.parameters;
+              self.values = [];
+              var array = parameters.split("__");
+              array.forEach(function(param){
+                  self.values.push(param);
+              });
+              self.getWorkers();
           }).error(function (err) {
-              console.log(err);
-          })
+              console.log(JSON.stringify(err));
+          });
         };
 
         this.getWorkers = function(){
@@ -28,16 +36,20 @@
                 url:'http://128.199.62.16:8080/api/trabajadores/get'
             }).success(function(data){
 		console.log(data);
-                self.worker = data;
+                self.worker = [];
+                data.forEach(function(element){
+                    var object = JSON.parse(element);
+                   self.worker.push(object);
+                });
             }).error(function (err) {
                 console.log(err);
             });
         };
 
-        this.addWorker = function(worker){
-            var workerToAdd = {trabajador:JSON.stringify(worker)};
+        this.addWorker = function(addedworker){
+            var workerToAdd = {trabajador:JSON.stringify(addedworker)};
 
-            self.worker.push(worker);
+            //self.worker.push(addedworker);
             $http({
                 method: 'POST',
                 data: $.param(workerToAdd),
@@ -54,7 +66,7 @@
         };
 
         this.values = ["nombre","apellidos","direccion"];
-        this.worker =[{nombre:"noel",apellidos:"carcases Gomez",direccion:"desconocida"},{nombre:"lysandra",apellidos:"garcia grave de peralta",direccion:"con noel"}];
+        //this.worker =[{nombre:"noel",apellidos:"carcases Gomez",direccion:"desconocida"},{nombre:"lysandra",apellidos:"garcia grave de peralta",direccion:"con noel"}];
         this.editingWorker = false;
         this.toggleEditing = function(worker){
             if (worker.editingWorker){
@@ -64,5 +76,14 @@
                 worker.editingWorker = true;
             }
         }
+
+        var init = function () {
+            self.getParams();
+            self.getWorkers();
+            // check if there is query in url
+            // and fire search in case its value is not empty
+        };
+// and fire it after definition
+        init();
     }]);
 })();
