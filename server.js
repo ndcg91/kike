@@ -78,7 +78,7 @@ router.route('/trabajadores/get')
                 Trabajador.find({},function(err,trabajadores){
 			if (err) res.send(err);
 					var filteredworkers = trabajadores.map(function(worker){
-						return worker.trabajador;
+						return worker.trabajador[0];
 					});
 			res.send(filteredworkers);
 		})

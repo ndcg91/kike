@@ -27,6 +27,7 @@
                 method:'GET',
                 url:'http://128.199.62.16:8080/api/trabajadores/get'
             }).success(function(data){
+		console.log(data);
                 self.worker = data;
             }).error(function (err) {
                 console.log(err);
