@@ -14,7 +14,7 @@
         this.getValues = function(){
           $http({
               method:'GET',
-              url:'http://127.0.0.1:8080/api/trabajadores/getParams'
+              url:'http://128.199.62.16:8080/api/trabajadores/getParams'
           }).success(function(data){
               self.values = data;
           }).error(function (err) {
@@ -25,7 +25,7 @@
         this.getWorkers = function(){
             $http({
                 method:'GET',
-                url:'http://127.0.0.1:8080/api/trabajadores/get'
+                url:'http://128.199.62.16:8080/api/trabajadores/get'
             }).success(function(data){
                 self.worker = data;
             }).error(function (err) {
@@ -43,7 +43,7 @@
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
                 },
-                url: 'http://127.0.0.1:8080/api/trabajadores/add'
+                url: 'http://128.199.62.16:8080/api/trabajadores/add'
             }).success(function (data) {
                 self.getWorkers();
                 return true;
