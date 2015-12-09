@@ -30,7 +30,40 @@
                 <i class="medium material-icons circle responsive-img center light-blue-text" ng-click="settings.deleteName(name)">delete</i>
             </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col s1 offset-s1">
+                <a class="btn-floating btn-large waves-effect waves-light blue" onclick="$('#modal1').openModal();"><i class="material-icons">add</i></a>
+            </div>
+        </div>
 
-    <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a>
+</div>
+</div>
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Añada un nuevo valor</h4>
+        <div class="input-field col s4">
+            <input id="valor" type="text" class="validate" ng-model="addValue">
+            <label class="active" for="valor">Valor</label>
+        </div>
+        <div class="input-field col s4">
+            <input id="busqueda" type="text" class="validate" ng-model="searchText">
+            <label class="active" for="busqueda">Buscar</label>
+        </div>
+        <div class="container">
+            <div class="row" ng-repeat="icon in settings.icons | filter:searchText">
+                <div class="col s1">
+                    <p>
+                        <input type="checkbox" id="{{icon}}_checkBox" ng-click="settings.selectedDecoration=icon" />
+                        <label for="{{icon}}_checkBox"></label>
+                    </p>
+                </div>
+                <div class="col s5">
+                    <i class="medium material-icons circle responsive-img center light-blue-text">  {{icon}}</i> <strong>{{icon}}</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
 </div>
