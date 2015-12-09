@@ -5,7 +5,9 @@
     var app = angular.module("Balance");
     app.controller("SettingController",['$http','$location','$window','$timeout','$scope',function($http,$location,$window,$timeout,$scope){
         //$window.localStorage.clear();
+
         var self=this; //to access scope within callbacks
+        this.newWorker = new Object();
         this.selected = false;
         this.name = false;
         this.nameFields = [{value:"Nombre",decoration:"perm_identity",editing:false},

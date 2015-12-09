@@ -33,7 +33,8 @@
         };
 
         this.addWorker = function(worker){
-            var workerToAdd = JSON.stringify({trabajador:worker});
+            var workerToAdd = {trabajador:worker};
+
             self.worker.push(worker);
             $http({
                 method: 'POST',
