@@ -1,0 +1,36 @@
+<div class="section">
+    <div class="container">
+    <h4>Editar Datos de Trabajadores</h4>
+    </div>
+    <div class="container" ng-show="settings.name" >
+        <div class="row" ng-repeat="name in settings.nameFields">
+            <div class="col s1 offset-s1">
+                <i class="large material-icons circle responsive-img center light-blue-text">{{name.decoration}}</i>
+            </div>
+            <div class="col s2">
+                <div class="container" ng-show="!name.editing">
+                    <h5>{{name.value}}</h5>
+                </div>
+                <div class="container" ng-show="name.editing">
+                    <input placeholder="value" id="{{name.value}}_value" type="text" ng-model="name.value">
+                    <label for="{{name.value}}_value">Decoracion</label>
+                </div>
+            </div>
+            <div class="col s1">
+                <p>
+                    <input type="checkbox" id="{{name.value}}_checkBox" ng-click="settings.editName(name)" />
+                    <label for="{{name.value}}_checkBox">Edit</label>
+                </p>
+            </div>
+            <div class="input-field col s2" ng-show="name.editing">
+                <input placeholder="Decoracion" id="decorator" type="text" ng-model="name.decoration">
+                <label for="decorator">Decoracion</label>
+            </div>
+            <div class="col s1">
+                <i class="medium material-icons circle responsive-img center light-blue-text" ng-click="settings.deleteName(name)">delete</i>
+            </div>
+        </div>
+    </div>
+
+    <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a>
+</div>
