@@ -20,23 +20,16 @@
     <script src="bower_components/angular-csv-import-tmp/dist/angular-csv-import.js"></script>
 </head>
 <body ng-controller="SettingController as settings">
-<nav class="light-blue lighten-1" role="navigation">
+
+<nav class="black lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Balance</a>
         <ul class="right hide-on-med-and-down">
             <li><a href="Trabajadores.html">Trabajadores</a></li>
-        </ul>
-        <ul class="right hide-on-med-and-down">
             <li><a href="Contratacion.html">Contratación</a></li>
-        </ul>
-        <ul class="right hide-on-med-and-down">
             <li><a href="Pago.html">Pago</a></li>
         </ul>
         <ul class="right hide-on-med-and-down">
-            <li><a class="dropdown-button" href="#!" data-activates="config">Configuracion<i class="material-icons right">arrow_drop_down</i></a></li>
-        </ul>
-
-        <ul id="nav-mobile" class="side-nav">
-            <li><a href="Trabajadores.html">Trabajadores</a></li>
+            <li><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="config">Configuracion<i class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
         <ul id="config" class="dropdown-content">
             <li><a href="#!">Contrato De Trabajo</a></li>
@@ -44,21 +37,24 @@
             <li class="divider"></li>
             <li><a href="#!">Calculo y nominas</a></li>
         </ul>
-        <ul id="nav-mobile" class="side-nav">
-            <li><a href="Contratacion.html">Contratación</a></li>
-        </ul>
 
         <ul id="nav-mobile" class="side-nav">
+            <li><a href="Trabajadores.html">Trabajadores</a></li>
+            <li><a href="Contratacion.html">Contratación</a></li>
             <li><a href="Pago.html">Pago</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="config" data-beloworigin="true">Configuracion<i class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
+
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
 </nav>
+
+
 <div class="content" ng-show="!settings.selected">
 <div class="section no-pad-bot" id="index-banner">
     <div class="container">
         <br><br>
-        <h1 class="header center orange-text">Configuracion General</h1>
+        <h1 class="header center black-text">Configuracion General</h1>
         <div class="row center">
             <h5 class="header col s12 light">Pagina para customizacion de datos y control de plantillas</h5>
         </div>
@@ -114,7 +110,7 @@
 <edit-trabajadores-values></edit-trabajadores-values>
 
 
-<footer class="page-footer orange">
+<footer class="page-footer black white-text">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
@@ -149,6 +145,7 @@
         </div>
     </div>
 </footer>
+
 
 <style>
     .block :hover{

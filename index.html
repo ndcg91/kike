@@ -23,41 +23,43 @@
 
 </head>
 <body ng-controller="BalanceMainController as main">
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Balance</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="Trabajadores.html">Trabajadores</a></li>
-      </ul>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="Contratacion.html">Contratación</a></li>
-      </ul>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="Pago.html">Pago</a></li>
-      </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="Trabajadores.html">Trabajadores</a></li>
-      	<li><a href="Contratacion.html">Contratación</a></li>
-	<li><a href="Pago.html">Pago</a></li>
-     </ul>
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="Contratacion.html">Contratación</a></li>
-      </ul>
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="Pago.html">Pago</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+<nav class="black lighten-1" role="navigation">
+  <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Balance</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="Trabajadores.html">Trabajadores</a></li>
+      <li><a href="Contratacion.html">Contratación</a></li>
+      <li><a href="Pago.html">Pago</a></li>
+    </ul>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="dropdown-button" data-beloworigin="true" href="Settings.html" data-activates="config">Configuracion<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+    <ul id="config" class="dropdown-content">
+      <li><a href="#!">Contrato De Trabajo</a></li>
+      <li ng-click="settings.name=true;settings.selected=true"><a href="#!">Datos de Trabajadores</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Calculo y nominas</a></li>
+    </ul>
+
+    <ul id="nav-mobile" class="side-nav">
+      <li><a href="Trabajadores.html">Trabajadores</a></li>
+      <li><a href="Contratacion.html">Contratación</a></li>
+      <li><a href="Pago.html">Pago</a></li>
+      <li><a class="dropdown-button" href="Settings.html" data-activates="config" data-beloworigin="true">Configuracion<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+  </div>
+</nav>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">Balance de Trabajadores</h1>
+      <h1 class="header center black-text">Balance de Trabajadores</h1>
       <div class="row center">
         <h5 class="header col s12 light">Pagina para contratación y control de trabajadores</h5>
       </div>
       <div class="row center">
-        <a href="#contratación_nueva" id="new_contract" class="btn-large waves-effect waves-light orange">Nueva contratación</a>
+        <a href="#contratación_nueva" id="new_contract" class="btn-large waves-effect waves-light black white-text">Nueva contratación</a>
       </div>
       <br><br>
 
@@ -112,7 +114,7 @@
     cursor:pointer;
 }
 </style>
-  <footer class="page-footer orange">
+  <footer class="page-footer black white-text">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">

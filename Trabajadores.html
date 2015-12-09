@@ -20,39 +20,99 @@
     <script src="bower_components/angular-csv-import-tmp/dist/angular-csv-import.js"></script>
 </head>
 <body ng-controller="TrabajadoresController as trabajadores">
-<nav class="light-blue lighten-1" role="navigation">
+
+<nav class="black lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Balance</a>
         <ul class="right hide-on-med-and-down">
             <li><a href="Trabajadores.html">Trabajadores</a></li>
-        </ul>
-        <ul class="right hide-on-med-and-down">
             <li><a href="Contratacion.html">Contratación</a></li>
+            <li><a href="Pago.html">Pago</a></li>
         </ul>
         <ul class="right hide-on-med-and-down">
-            <li><a href="Pago.html">Pago</a></li>
+            <li><a class="dropdown-button" data-beloworigin="true" href="Settings.html" data-activates="config">Configuracion<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+        <ul id="config" class="dropdown-content">
+            <li><a href="#!">Contrato De Trabajo</a></li>
+            <li ng-click="settings.name=true;settings.selected=true"><a href="#!">Datos de Trabajadores</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">Calculo y nominas</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
             <li><a href="Trabajadores.html">Trabajadores</a></li>
-        </ul>
-        <ul id="nav-mobile" class="side-nav">
             <li><a href="Contratacion.html">Contratación</a></li>
-        </ul>
-        <ul id="nav-mobile" class="side-nav">
             <li><a href="Pago.html">Pago</a></li>
+            <li><a class="dropdown-button" href="Settings.html" data-activates="config" data-beloworigin="true">Configuracion<i class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
+
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
 </nav>
-<ng-csv-import content="trabajadores.csv.content"
+<!--<ng-csv-import content="trabajadores.csv.content"
                header="trabajadores.csv.header"
                separator="trabajadores.separator"
                result="trabajadores.csv.result"
                encoding="trabajadores.encoding"
                accept="csv.accept"></ng-csv-import>
 {{trabajadores.csv}}
-{{trabajadores.separator}}
-<footer class="page-footer orange">
+{{trabajadores.separator}}-->
+<div class="container" style="padding-top: 20px;padding-bottom: 20px">
+    <h3 class="center-align" style="padding-top: 20px;padding-bottom: 20px">Datos de los trabajadores</h3>
+    <table class="responsive-table">
+        <thead>
+            <tr >
+                <th ng-repeat="value in trabajadores.values">
+                    {{value}}
+                </th>
+                <th>
+                    Editar
+                </th>
+                <th>
+                    Borrar
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="data in trabajadores.worker">
+            <td ng-repeat="value in trabajadores.values">
+                <div class="container" ng-show="!data.editingWorker">
+                    {{data[value]}}
+                </div>
+                <div class="input-field col s4" ng-show="data.editingWorker">
+                    <input value="{{data[value]}}" id="{{data[value]}}_id" type="text" class="validate" ng-model="data[value]">
+                    <label class="active" for="{{data[value]}}_id">{{value}}</label>
+                </div>
+            </td>
+            <td>
+                <p>
+                    <input type="checkbox" id="{{data}}_id" ng-click="trabajadores.toggleEditing(data)" />
+                    <label for="{{data}}_id">Red</label>
+                </p>
+            </td>
+            <td>
+                <i class="material-icons center black-text" ng-click="settings.deleteName(name)">delete</i>
+            </td>
+        </tr>
+        <tr ng-show="trabajadores.adding">
+            <td ng-repeat="value in trabajadores.values">
+                <input id="adding_worker" type="text" class="validate" ng-model="trabajadores.newWorker[value]">
+                <label class="active" for="adding_worker">{{value}}</label>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div clas="container">
+        <div class="row">
+            <div class="col s2 offset-s5">
+
+                <a class="btn-floating btn-large waves-effect waves-light red" ng-click="trabajadores.adding = true" ng-show="!trabajadores.adding"><i class="material-icons">add</i></a>
+                <a class="btn-floating btn-large waves-effect waves-light green" ng-click="trabajadores.adding = false;trabajadores.addWorker(trabajadores.newWorker)" ng-show="trabajadores.adding"><i class="material-icons">done</i></a>
+
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="page-footer black white-text">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">

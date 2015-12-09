@@ -8,5 +8,58 @@
         var self=this; //to access scope within callbacks
         this.separator = ";";
         this.encoding = "ISO-8859-1";
+
+
+        this.getValues = function(){
+          $http({
+              method:'GET',
+              url:'http://127.0.0.1:8080/api/trabajadores/getParams'
+          }).success(function(data){
+              self.values = data;
+          }).error(function (err) {
+              console.log(err);
+          })
+        };
+
+        this.getWorkers = function(){
+            $http({
+                method:'GET',
+                url:'http://127.0.0.1:8080/api/trabajadores/get'
+            }).success(function(data){
+                self.worker = data;
+            }).error(function (err) {
+                console.log(err);
+            });
+        };
+
+        this.addWorker = function(worker){
+            var workerToAdd = {trabajador:worker};
+            self.worker.push(worker);
+            $http({
+                method: 'POST',
+                data: $.param(workerToAdd),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                },
+                url: 'http://127.0.0.1:8080/api/trabajadores/add'
+            }).success(function (data) {
+                self.getWorkers();
+                return true;
+            }).error(function(){
+                return false;
+            });
+        };
+
+        this.values = ["nombre","apellidos","direccion"];
+        this.worker =[{nombre:"noel",apellidos:"carcases Gomez",direccion:"desconocida"},{nombre:"lysandra",apellidos:"garcia grave de peralta",direccion:"con noel"}];
+        this.editingWorker = false;
+        this.toggleEditing = function(worker){
+            if (worker.editingWorker){
+                worker.editingWorker = false;
+            }
+            else {
+                worker.editingWorker = true;
+            }
+        }
     }]);
 })();

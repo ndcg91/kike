@@ -50,10 +50,10 @@
             <label class="active" for="busqueda">Buscar</label>
         </div>
         <div class="container">
-            <div class="row" ng-repeat="icon in settings.icons | filter:searchText">
+            <div class="row" ng-repeat="icon in settings.icons | filter:searchText" >
                 <div class="col s1">
                     <p>
-                        <input type="checkbox" id="{{icon}}_checkBox" ng-click="settings.selectedDecoration=icon" />
+                        <input type="checkbox" id="{{icon}}_checkBox" ng-click="settings.selectedDecoration=icon;settings.iconSelected=true;settings.searchText=icon" />
                         <label for="{{icon}}_checkBox"></label>
                     </p>
                 </div>

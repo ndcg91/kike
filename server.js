@@ -41,13 +41,16 @@ router.get('/', function(req, res) {
 
 router.route('/trabajadores/setParams')
 	.post(function(req,res){
-		var params = req.body.params
+		var params = req.body.params;
 		var newParam = new Parameter();
-		newParam.parameters = req.body.params
-		newParam.save(function(err,savedParams){
-			if (err) res.send(err);
-			res.send({message:"parameters updated"});
-		})
+        findOneAndDelete({},function(err){
+            if (err) console.log(err);
+            newParam.parameters = req.body.params
+            newParam.save(function(err,savedParams){
+                if (err) res.send(err);
+                res.send({message:"parameters updated"});
+            })
+        });
 	});
 
 
@@ -55,9 +58,9 @@ router.route('/trabajadores/getParams')
         .get(function(req,res){
                 Parameter.findOne({},function(err,param){
 			if (err) res.send(err);
-			res.send(param);
+			res.send(param.paramenters);
 		});
-        });
+		});
 
 router.route('/trabajadores/add')
 	.post(function(req,res){
@@ -66,15 +69,18 @@ router.route('/trabajadores/add')
 		trabajador.trabajador = req.body.trabajador;
 		trabajador.save(function(err,trabajador){
 			if (err) res.send(err);
-			res.send(trabajador);
+			res.send(trabajador.trabajador);
 		});
 	});
 
 router.route('/trabajadores/get')
         .get(function(req,res){
-                Trabajador.find({},function(err,trabajador){
-			if (err) res.send(err)
-			res.send(trabajador);
+                Trabajador.find({},function(err,trabajadores){
+			if (err) res.send(err);
+					var filteredworkers = trabajadores.map(function(worker){
+						return worker.trabajador;
+					});
+			res.send(filteredworkers);
 		})
         });
 
