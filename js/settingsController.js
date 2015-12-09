@@ -7,7 +7,6 @@
         //$window.localStorage.clear();
 
         var self=this; //to access scope within callbacks
-        this.newWorker = new Object();
         this.selected = false;
         this.name = false;
         this.nameFields = [{value:"Nombre",decoration:"perm_identity",editing:false},

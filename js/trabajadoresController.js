@@ -8,6 +8,7 @@
         var self=this; //to access scope within callbacks
         this.separator = ";";
         this.encoding = "ISO-8859-1";
+        this.newWorker = new Object();
 
 
         this.getValues = function(){
