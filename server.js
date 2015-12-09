@@ -15,9 +15,9 @@ app.use(morgan("dev"));
 
 
 app.use(function(req, res, next) {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type, Authorization, Access-Control-Allow-Origin, Access-Control-Allow-Headers,X-Requested-With, Content-Type, Accept');
+//    res.setHeader('Access-Control-Allow-Origin', '*');
+    //res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    //res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type, Authorization, Access-Control-Allow-Origin, Access-Control-Allow-Headers,X-Requested-With, Content-Type, Accept');
     next();
 });
 
@@ -28,9 +28,9 @@ var port = process.env.PORT || 8080;
 var router = express.Router();
 
 router.use(function(req, res, next) {
-//res.header('Access-Control-Allow-Origin', 'http://128.199.62.16');
-//res.header('Access-Control-Allow-Methods', 'GET, POST');
-//res.header('Access-Control-Allow-Headers', 'X-Requested-With,content-type, Authorization, Access-Control-Allow-Origin, Acc$
+res.header('Access-Control-Allow-Origin', '*');
+res.header('Access-Control-Allow-Methods', 'GET, POST');
+res.header('Access-Control-Allow-Headers', 'X-Requested-With,content-type, Authorization, Access-Control-Allow-Origin');
 console.log("algo ha pasado");
 next();
 });
@@ -45,11 +45,11 @@ router.route('/trabajadores/setParams')
 		var newParam = new Parameter();
         findOneAndDelete({},function(err){
             if (err) console.log(err);
-            newParam.parameters = req.body.params
+            newParam.parameters = req.body.params;
             newParam.save(function(err,savedParams){
                 if (err) res.send(err);
                 res.send({message:"parameters updated"});
-            })
+            });
         });
 	});
 
