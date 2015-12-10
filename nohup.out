@@ -1,0 +1,514 @@
+listening on port 8080
+listening on port 8080
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m33.129 ms - -[0m
+[0mGET /api/trabajadores/get [36m304 [0m43.941 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m16.620 ms - -[0m
+algo ha pasado
+[0mPOST /api/trabajadores/add [32m200 [0m24.673 ms - 208[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m20.597 ms - 1424[0m
+[0mGET http://www.baidu.com/?rands=_2638061616824361384308264 [33m404 [0m3.133 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_537355582836877234677860 [33m404 [0m0.707 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_7833165103652560681616 [33m404 [0m0.496 ms - 67[0m
+[0mGET http://zc.qq.com/cgi-bin/chs/numreg/init? [33m404 [0m0.847 ms - 53[0m
+[0mGET /manager/html [33m404 [0m0.618 ms - 25[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=144971808483&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.352 ms - 108[0m
+[0mGET http://www.baidu.com/?rands=_6962042002353872434824 [33m404 [0m0.599 ms - 63[0m
+[0mGET http://www.haosou.com/?rands=_2282430699229071986053184 [33m404 [0m0.738 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_18684204360441862332611200 [33m404 [0m0.320 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_802018187689009006463584 [33m404 [0m0.352 ms - 69[0m
+[0mGET http://www.google.com/reader/about/ [33m404 [0m0.524 ms - 47[0m
+[0mGET http://zc.qq.com/cgi-bin/chs/numreg/init? [33m404 [0m0.568 ms - 53[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.917 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m16.874 ms - 1424[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m14.735 ms - -[0m
+algo ha pasado
+[0mPOST /api/trabajadores/add [32m200 [0m9.750 ms - 185[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m16.476 ms - 1608[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m6.967 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m22.838 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m23.707 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m15.190 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m8.093 ms - -[0m
+[0mGET /api/trabajadores/get [36m304 [0m18.959 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m15.964 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m4.327 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m16.594 ms - 1608[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m17.346 ms - 1608[0m
+algo ha pasado
+[0mPOST /api/trabajadores/add [32m200 [0m6.337 ms - 178[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m22.384 ms - 1785[0m
+[0mGET http://www.baidu.com/?rands=_190649838002391301651680 [33m404 [0m1.480 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_12136135415021612964248992 [33m404 [0m0.353 ms - 68[0m
+[0mGET http://www.kuaidaili.com/?rands=_584194115023987462873200 [33m404 [0m0.268 ms - 69[0m
+[0mGET http://www.baidu.com/?rands=_18243215602231020482327760 [33m404 [0m0.316 ms - 67[0m
+[0mGET http://www.haosou.com/?rands=_6309167139614375461126824 [33m404 [0m0.291 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_31990168096018010447428336 [33m404 [0m0.217 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_139092680028034767040768 [33m404 [0m0.565 ms - 69[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m11.497 ms - -[0m
+[0mGET /api/trabajadores/get [36m304 [0m27.698 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m15.151 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m8.998 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m27.714 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m15.500 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m22.481 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m3.618 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m15.798 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.099 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m15.951 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m13.430 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m33.988 ms - 1785[0m
+[0mGET /api/trabajadores/getParams [32m200 [0m30.918 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m17.179 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m9.248 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m20.908 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m16.596 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m8.875 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m32.618 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m23.356 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m31.308 ms - 1785[0m
+[0mGET /api/trabajadores/getParams [32m200 [0m27.156 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m14.056 ms - 1785[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=144973367911&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.926 ms - 108[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m8.262 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m22.667 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m15.912 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m5.898 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m14.970 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m22.303 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m36.580 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m51.335 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m19.399 ms - 1785[0m
+[0mGET http://zc.qq.com/cgi-bin/chs/numreg/init? [33m404 [0m2.368 ms - 53[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m6.968 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m21.989 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m40.576 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m5.505 ms - -[0m
+[0mGET /api/trabajadores/get [36m304 [0m18.471 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m20.775 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.194 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m18.881 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m19.927 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m8.457 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m33.921 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m18.008 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m11.861 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m34.470 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m36.646 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m6.764 ms - -[0m
+[0mGET /api/trabajadores/get [36m304 [0m14.075 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m14.888 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.561 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m15.108 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m21.242 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m8.095 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m17.038 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m12.390 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m8.341 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m16.756 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m18.019 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.614 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m15.046 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m16.042 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m26.155 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m5.101 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m15.149 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m15.154 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m18.327 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m2.250 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m20.846 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m4.643 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m14.734 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m14.104 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m20.717 ms - 1785[0m
+[0mGET /api/trabajadores/getParams [32m200 [0m17.965 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m13.963 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.373 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m16.427 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m24.256 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m8.102 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m12.937 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m18.802 ms - -[0m
+[0mGET http://www.haosou.com/?rands=_12100162705014336404543672 [33m404 [0m1.742 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_54017192048573727535580 [33m404 [0m0.378 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_11580165960831549507909020 [33m404 [0m0.368 ms - 71[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.875 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m11.597 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m14.198 ms - 1785[0m
+[0mGET /manager/html [33m404 [0m2.661 ms - 25[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m7.722 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m20.279 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m17.436 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.136 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m17.148 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m12.234 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.167 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m14.989 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m17.437 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.510 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m15.843 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m14.340 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m7.018 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m15.929 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m18.012 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m7.157 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m17.297 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m19.238 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m9.229 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m51.332 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m24.750 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m9.151 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m25.280 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m18.294 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m13.786 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m26.735 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m28.530 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m11.764 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m16.411 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m17.088 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m7.060 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m23.214 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m15.773 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m8.125 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m18.979 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m31.695 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m9.880 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m49.029 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m15.991 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m7.143 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m15.387 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m14.928 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.002 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m14.552 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m13.649 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m8.950 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m25.714 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m22.123 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m8.721 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m25.379 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m12.442 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.876 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m14.907 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m15.267 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m5.905 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m14.483 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m15.014 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m5.356 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m13.909 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m20.654 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.353 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m14.966 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m12.952 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m5.268 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m13.960 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m12.421 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.802 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m19.910 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m27.859 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m5.931 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m19.209 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m8.888 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m18.543 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m14.250 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.165 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m14.542 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m12.685 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m7.489 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m14.517 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m15.865 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m7.912 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m14.925 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m12.387 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.356 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m17.974 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m22.774 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m7.244 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m20.062 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m16.338 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m5.883 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m13.938 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m16.808 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.368 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m14.914 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m12.563 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m28.062 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m43.177 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m16.813 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m7.595 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m21.880 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m18.178 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.796 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m18.864 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m21.667 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m9.074 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m24.243 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m24.550 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m14.237 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m36.249 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m27.389 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m6.915 ms - -[0m
+[0mGET /api/trabajadores/get [36m304 [0m19.483 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m40.397 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m5.774 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m14.053 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m13.004 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m5.989 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m15.318 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m12.278 ms - 1785[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=144974970109&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.444 ms - 108[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m4.936 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m11.397 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m14.565 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m10.380 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m23.276 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m15.994 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m6.346 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m14.862 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m19.098 ms - 1785[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m8.041 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m13.722 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m14.098 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m5.912 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m14.777 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m16.525 ms - 1785[0m
+[0mGET /manager/html [33m404 [0m1.265 ms - 25[0m
+[0mGET /manager/html [33m404 [0m1.324 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.717 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.689 ms - 25[0m
