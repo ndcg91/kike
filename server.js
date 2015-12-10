@@ -1,3 +1,4 @@
+
 var express             = require('express');
 var app                 = express();
 var bodyParser          = require('body-parser');
@@ -8,6 +9,8 @@ var Trabajador		= require('./modules/trabajadores.js');
 var Nomina		= require('./modules/nomina.js');
 var Contrato            = require('./modules/contrato.js');
 var Parameter		= require('./modules/parameters.js');
+//var Qs 			= require('qs');
+
 mongoose.connect('mongodb://kike:TemporaL1718@127.0.0.1:27017/kike');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -43,14 +46,19 @@ router.route('/trabajadores/setParams')
 	.post(function(req,res){
 		var params = req.body.params;
 		var newParam = new Parameter();
-        findOneAndDelete({},function(err){
-            if (err) console.log(err);
-            newParam.parameters = req.body.params;
-            newParam.save(function(err,savedParams){
-                if (err) res.send(err);
-                res.send({message:"parameters updated"});
-            });
-        });
+        	Parameter.remove({},function(err){
+           		if (err) console.log(err);
+            		newParam.parameters = params;
+			
+			//newParam.update({ $push: { parameters: { $each:  params} } });
+            		//params.forEach(function(param){
+				console.log(params);
+			//});
+			newParam.save(function(err,savedParams){
+                		if (err) res.send(err);
+                		res.send({message:"parameters updated"});
+            		});
+        	});
 	});
 
 
@@ -58,7 +66,7 @@ router.route('/trabajadores/getParams')
         .get(function(req,res){
                 Parameter.findOne({},function(err,param){
 			if (err) res.send(err);
-			res.send(param.paramenters);
+			res.send(param);
 		});
 		});
 
