@@ -137,15 +137,16 @@
 				<div class="container">
 				<div class="row" ng-show="trabajadores.csvCheck">
 		        	        <div class="input-field col s4" ng-repeat="value in trabajadores.values">
-                        			<select>
-                                			<option value="" disabled selected>{{value}}?</option>
-                                			<option ng-repeat="(i,csv) in trabajadores.csv.result[1]" value="{{i}}">{{csv}}</option>
+                        			<select ng-model="orderSelected" ng-options="excel for excel in trabajadores.csv.result[1]" >
+                                			<!--<option value="" disabled selected>{{value}}?</option>-->
+                                			<!--<option ng-repeat="(i,csv) in trabajadores.csv.result[1]" value="{{i}}" ng-click="console.log('clicked' + i)";>{{csv}}</option>-->
                         			</select>
                         			<label>{{value}}</label>
                 			</div>
         			</div>
 				</div>
-
+                    {{trabajadores.orderSelected}}
+                {{trabajadores.csv.result[1]}}
 				<div class="divider"></div>
 				<div class="container">
 				<div class="row">

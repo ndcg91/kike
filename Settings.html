@@ -70,7 +70,7 @@
 
         <!--   Icon Section   -->
         <div class="row">
-            <div class="col s12 m4  hoverable">
+            <div class="col s12 m4  hoverable" ng-click="settings.hireShow=true;settings.selected=true">
                 <div class="icon-block">
                     <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
                     <h5 class="center">Configuracion Contrato de Trabajo</h5>
@@ -88,7 +88,7 @@
                 </div>
             </div>
 
-            <div class="col s12 m4  hoverable">
+            <div class="col s12 m4  hoverable"ng-click="settings.nominasShow=true;settings.selected=true">
                 <div class="icon-block">
                     <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
                     <h5 class="center">Calculo y Nóminas</h5>
@@ -108,7 +108,8 @@
 </div>
 
 <edit-trabajadores-values></edit-trabajadores-values>
-
+<edit-hire-values></edit-hire-values>
+<edit-nomina-values></edit-nomina-values>
 
 <footer class="page-footer black white-text">
     <div class="container">

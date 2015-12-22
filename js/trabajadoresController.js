@@ -12,7 +12,20 @@
        // this.values = [];
         this.worker = [];
 	this.csvCheck = false;
-
+    self.importOrder = [];
+        this.importSelected = function(){
+            console.log('selected' + trabajadores.importSelected)
+        };
+        this.importWorkers = function(order){
+            var newImportWorker = {};
+              self.csv.result.forEach(function(csv){
+                  order.forEach(function(property){
+                      csv[property[order]] = newImportWorker[property[value]];
+                  });
+              self.addWorker(newImportWorker);
+              newImportWorker = {};
+              });
+        };
         this.getParams = function(){
           $http({
               method:'GET',
@@ -41,7 +54,6 @@
                 method:'GET',
                 url:'http://128.199.62.16:8080/api/trabajadores/get'
             }).success(function(data){
-		//console.log(data);
                 self.worker = [];
                 data.forEach(function(element){
                     var object = JSON.parse(element);
@@ -72,8 +84,8 @@
             });
         };
 
-        //this.values = ["nombre","apellidos","direccion"];
-        //this.worker =[{nombre:"noel",apellidos:"carcases Gomez",direccion:"desconocida"},{nombre:"lysandra",apellidos:"garcia grave de peralta",direccion:"con noel"}];
+        this.values = ["nombre","apellidos","direccion"];
+        this.worker =[{nombre:"noel",apellidos:"carcases Gomez",direccion:"desconocida"},{nombre:"lysandra",apellidos:"garcia grave de peralta",direccion:"con noel"}];
         this.editingWorker = false;
         this.toggleEditing = function(worker){
             if (worker.editingWorker){

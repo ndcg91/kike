@@ -1,0 +1,47 @@
+<div ng-show="settings.hireShow">
+<div class="section">
+    <div class="container">
+        <div class="row">
+        <h3>Edicion del Contrato de Trabajo</h3>
+            <p>A la derecha puede elegir cuales seran los valores que apareceran reflejados en el contrato de trabajo y editar el texto usando el contenido</p>
+        </div>
+    </div>
+</div>
+<div class="divider"></div>
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col s9">
+                <div class="row" id="preview_toggle">
+                    <div class="col s6">
+                        <h5>{{settings.hire.mode}}</h5>
+                    </div>
+                    <div class="col s6">
+                        <p>
+                            <input type="checkbox" id="edit_hire_checkBox" ng-click="settings.toggleEdit()" />
+                            <label for="edit_hire_checkBox">Editar</label>
+                        </p>
+                    </div>
+                </div>
+                <div class="row" id="hire_container">
+                    <div id="preview" ng-show="settings.hire.preview">
+
+                    </div>
+                    <div id="editing" ng-show="settings.hire.editing">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col s3">
+                <p>Seleccione la variable para añadir</p>
+                <div class="row" ng-repeat="value in settings.nameFields">
+                    <p>
+                        <input type="checkbox" id="add_{{value.value}}" ng-click="settings.addToHire(value.value)" />
+                        <label for="add_{{value.value}}">{{value.value}}</label>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
