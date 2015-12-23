@@ -3,7 +3,7 @@
  */
 (function(){
     var app = angular.module("Balance");
-    app.controller("TrabajadoresController",['$http','$location','$window','$timeout','$scope',function($http,$location,$window,$timeout,$scope){
+    app.controller("TrabajadoresController",['$http','$location','$window','$timeout','$scope','$localStorage',function($http,$location,$window,$timeout,$scope,$localStorage){
         //$window.localStorage.clear();
         var self=this; //to access scope within callbacks
         this.separator = ";";
@@ -11,8 +11,10 @@
         this.newWorker = new Object();
        // this.values = [];
         this.worker = [];
-	this.csvCheck = false;
-    self.importOrder = [];
+        this.values = [];
+	    this.csvCheck = false;
+        self.importOrder = [];
+
         this.importSelected = function(){
             console.log('selected' + trabajadores.importSelected)
         };
@@ -26,7 +28,15 @@
               newImportWorker = {};
               });
         };
+
         this.getParams = function(){
+            self.values=$localStorage.WorkerParams;
+        };
+
+
+
+        //HTTP GET PARAMS COMMENTED TEMPROALY OUT
+        /*this.getParams = function(){
           $http({
               method:'GET',
               url:'http://128.199.62.16:8080/api/trabajadores/getParams'
@@ -48,7 +58,10 @@
               console.log(JSON.stringify(err));
           });
         };
+        */
 
+        //GET WORKERS TEMPORALY COMMENTED OUT, TEMPORALY REPLACED BY LOCAL STORAGE UNTIL FINAL SOLUTION
+        /*
         this.getWorkers = function(){
             $http({
                 method:'GET',
@@ -83,9 +96,28 @@
                 return false;
             });
         };
+        */
+        this.getWorkers = function(){
+            self.worker = $localStorage.workers;
+        };
+        this.addWorker = function(workerToAdd){
+            $localStorage.workers.push(workerToAdd);
+            self.getWorkers();
+        };
+        this.deleteWorker = function(workerToDelete){
+            var tempArray = [];
+            self.worker.forEach(function(worker){
+                if (worker != workerToDelete){
+                    tempArray.push(worker);
+                }
+            });
+            $localStorage.workers = tempArray;
+            self.getWorkers();
+        };
+        this.updateWorkers = function(){
+            $localStorage.workers = self.worker;
+        };
 
-        this.values = [{value:"nombre",type:"text"},{value:"apellidos",type:"text"},{value:"direccion",type:"text"},{value:"fecha",type:"date"},{value:"otro",type:"text"}];
-        this.worker =[{nombre:"noel",apellidos:"carcases Gomez",direccion:"desconocida"},{nombre:"lysandra",apellidos:"garcia grave de peralta",direccion:"con noel", fecha:""}];
         this.editingWorker = false;
         this.toggleEditing = function(worker){
             if (worker.editingWorker){

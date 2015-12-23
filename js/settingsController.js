@@ -3,7 +3,7 @@
  */
 (function(){
     var app = angular.module("Balance");
-    app.controller("SettingController",['$http','$location','$window','$timeout','$scope',function($http,$location,$window,$timeout,$scope){
+    app.controller("SettingController",['$http','$location','$window','$timeout','$scope','$localStorage',function($http,$location,$window,$timeout,$scope,$localStorage){
         //$window.localStorage.clear();
 
 
@@ -38,14 +38,25 @@
 
         //CREATE
         this.addWorkerValue = function(value){
+            console.log("add param");
             var newObject = {value:value.value,editing:false,type:value.type};
             self.nameFields.push(newObject);
             self.updateParams();
         };
 
 
-        //RETRIEVE
+        //RETRIEVE HTTP RETRIEVE TEMPORALLY COMMENTED OUT
         this.getParams = function(){
+            console.log("getParamenters");
+            console.log($localStorage.WorkerParams);
+            $localStorage.WorkerParams.forEach(function(element){
+               element.editing = false;
+            });
+            self.nameFields = $localStorage.WorkerParams;
+
+        };
+
+        /*this.getParams = function(){
             $http({
                 method:'GET',
                 url:'http://128.199.62.16:8080/api/trabajadores/getParams'
@@ -69,6 +80,7 @@
                 console.log(JSON.stringify(err));
             });
         };
+        */
 
 
         //UPDATE
@@ -88,7 +100,14 @@
             });
         };
 
+
+        //UPDATE PARAMS TEMPORALLY COMMENTED OUT
         this.updateParams = function(){
+            console.log("updating");
+            console.log($localStorage.WorkerParams);
+            $localStorage.WorkerParams = self.nameFields;
+        };
+       /* this.updateParams = function(){
             var params=[];
             self.nameFields.forEach(function(field){
                 params.push(field.value);
@@ -108,10 +127,20 @@
                 console.log(data);
             });
         };
+        */
 
-
-        //DELETE
+        //DELETE HTTP DELETE TEMPORALLY COMMENTED OUT
         this.deleteName = function(name){
+            var array = [];
+            self.nameFields.forEach(function(element){
+                if (element != name){
+                    array.push(element);
+                }
+            });
+            self.nameFields = array;
+            self.updateParams();
+        }
+        /*this.deleteName = function(name){
             console.log("deleting");
             var array = [];
             self.nameFields.forEach(function(element){
@@ -121,7 +150,7 @@
             });
             self.nameFields = array;
             self.updateParams();
-        };
+        };*/
 
 
         this.inputType = ["text","number","checkbox","date"];
@@ -139,17 +168,32 @@
          ################################*/
 
 
-        this.hire={};
+        this.hire= $localStorage.hire;
         this.hire.mode = "Preview";
+        this.hire.preview = true;
+        this.hire.editing = false;
         this.toggleEdit = function(){
             if (this.hire.mode == "Preview") {
                 console.log("changing");
                 this.hire.mode = "Editing";
+                this.hire.editing = true;
+                this.hire.preview = false;
             }
             else{
                 this.hire.mode = "Preview";
+                this.hire.editing = false;
+                this.hire.preview = true;
             }
         };
+
+        this.updateHire = function(){
+            self.hire = $localStorage.hire;
+        };
+        this.addHireVariable = function(variable){
+
+        }
+
+
 
 
    //##############################################################################

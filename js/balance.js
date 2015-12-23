@@ -1,5 +1,5 @@
 (function(){
-    var app = angular.module("Balance",['ngCsvImport']);
+    var app = angular.module("Balance",['ngCsvImport','ngStorage']);
 
     //Added for CORS Support
     app.config(['$httpProvider',function($httpProvider){
@@ -9,7 +9,7 @@
 
 
     //Balance Controller
-    app.controller("BalanceMainController",['$http','$location','$window','$timeout','$scope',function($http,$location,$window,$timeout,$scope){
+    app.controller("BalanceMainController",['$http','$location','$window','$timeout','$scope','$localStorage',function($http,$location,$window,$timeout,$scope,$localStorage){
         //$window.localStorage.clear();
         var self=this; //to access scope within callbacks
 

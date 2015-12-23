@@ -33,12 +33,14 @@
                 </div>
             </div>
             <div class="col s3">
+                <div class="container" ng-show="settings.hire.editing">
                 <p>Seleccione la variable para añadir</p>
                 <div class="row" ng-repeat="value in settings.nameFields">
                     <p>
                         <input type="checkbox" id="add_{{value.value}}" ng-click="settings.addToHire(value.value)" />
                         <label for="add_{{value.value}}">{{value.value}}</label>
                     </p>
+                </div>
                 </div>
             </div>
         </div>

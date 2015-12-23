@@ -13,6 +13,7 @@
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.min.js"></script>
     <script src="bower_components/Materialize/bin/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="js/balance.js"></script>
@@ -84,10 +85,9 @@
             <td ng-repeat="value in trabajadores.values">
                 <div class="container" ng-show="!data.editingWorker">
                     {{data[value.value]}}
-                    {{data}}
                 </div>
                 <div class="input-field col s4" ng-show="data.editingWorker">
-                    <input value="{{data[value.value]}}" id="{{data[value.value]}}_id" type="{{value.type}}" class="validate" ng-class="{datepicker: value.type == 'date'}" ng-model="data[value.value]">
+                    <input value="{{data[value.value]}}" id="{{data[value.value]}}_id" type="{{value.type == 'date' && 'text' || value.type}}" class="validate" ng-class="{datepicker: value.type == 'date'}" ng-model="data[value.value]" novalidate formnovalidate>
                     <label class="active" for="{{data[value.value]}}_id">{{value.value}}</label>
                 </div>
             </td>
@@ -106,7 +106,7 @@
         </tr>
         <tr ng-show="trabajadores.adding">
             <td ng-repeat="v in trabajadores.values">
-                <input id="adding_worker" type="{{v.type}}" class="validate" ng-class="{datepicker: v.type == 'date'}" ng-model="trabajadores.newWorker[v.value]">
+                <input id="adding_worker" type="{{v.type}}" class="validate" ng-class="{datepicker: v.type == 'date'}" ng-model="trabajadores.newWorker[v.value]"  novalidate formnovalidate>
                 <label class="active" for="adding_worker">{{v}}</label>
             </td>
         </tr>
