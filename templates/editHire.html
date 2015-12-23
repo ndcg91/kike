@@ -11,7 +11,7 @@
 <div class="section">
     <div class="container">
         <div class="row">
-            <div class="col s9">
+            <div class="col s8">
                 <div class="row" id="preview_toggle">
                     <div class="col s6">
                         <h5>{{settings.hire.mode}}</h5>
@@ -25,25 +25,55 @@
                 </div>
                 <div class="row" id="hire_container">
                     <div id="preview" ng-show="settings.hire.preview">
-
+                        <p ng-repeat="section in settings.hire.sections">
+                            <strong ng-repeat="variable in section.variables" ng-click="settings.removeHireVariable(variable.variable)">
+                                {{variable.text}} <strong class="grey red-text">{{variable.variable}}</strong>
+                            </strong>
+                        </p>
                     </div>
                     <div id="editing" ng-show="settings.hire.editing">
-
+                        <div ng-repeat="section in settings.hire.sections">
+                            <div ng-repeat="variable in section.variables">
+                                <textarea  value="{{variable.text}}" ng-model="variable.text" id="{{variable.variable}}_editElement" class="materialize-textarea"></textarea>
+                                <label for="{{variable.variable}}_editElement">{{variable.variable}}</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col s3">
-                <div class="container" ng-show="settings.hire.editing">
-                <p>Seleccione la variable para añadir</p>
-                <div class="row" ng-repeat="value in settings.nameFields">
-                    <p>
-                        <input type="checkbox" id="add_{{value.value}}" ng-click="settings.addToHire(value.value)" />
-                        <label for="add_{{value.value}}">{{value.value}}</label>
-                    </p>
-                </div>
+            <div class="col s4">
+                <div class="row" ng-show="settings.hire.editing" >
+                    <button data-target="#variable_modal" class="btn modal-trigger" onclick="$('#variable_modal').openModal();" ng-click="settings.checkSection();sectionSelected=false">Añadir Variable</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
+</div>
+
+<div id="variable_modal" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h4>Añadir Variable</h4>
+        <div class="container">
+            <div class="row">
+                <div  ng-show="!settings.sectionSelected">
+                    <h5>Elija la seccion</h5>
+                <div  ng-repeat="section in settings.hire.sections">
+                    <input type="checkbox" id="{{section.name}}_select" ng-click="settings.sectionSelected=true;settings.selectedSession=section.number">
+                    <label for="{{section.name}}_select">{{section.name}}</label>
+                    <input type="text" placeholder="Nombre" ng-model="settings.newSectionName" ng-show="settings.newSection">
+                </div>
+                    <button class="btn" ng-click="settings.newSection=true" ng-show="!settings.newSection">Nueva</button>
+                    <button class="btn" ng-click="settings.newSection=false;settings.addHireSection({number:settings.hire.sections.length,name:settings.newSectionName, variables:[]})" ng-show="settings.newSection">Completar</button>
+                </div>
+                <div ng-show="settings.sectionSelected" ng-repeat="value in settings.nameFields">
+                    <input  id="{{value.value}}_select" type="checkbox" placeholder="{{value.value}}" ng-click="settings.addVariable(value)" onclick="$('#variable_modal').closeModal();">
+                    <label for="{{value.value}}_select">{{value.value}}</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
 </div>

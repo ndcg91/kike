@@ -100,13 +100,13 @@
                     <label for="{{data}}_id">Editar</label>
                 </p>
             </td>
-            <td>
-                <i class="material-icons center black-text" ng-click="settings.deleteName(name)">delete</i>
+            <td ng-click="trabajadores.deleteWorker(data)">
+                <i class="material-icons center black-text hoverable"  >delete</i>
             </td>
         </tr>
         <tr ng-show="trabajadores.adding">
             <td ng-repeat="v in trabajadores.values">
-                <input id="adding_worker" type="{{v.type}}" class="validate" ng-class="{datepicker: v.type == 'date'}" ng-model="trabajadores.newWorker[v.value]"  novalidate formnovalidate>
+                <input id="adding_worker" type="{{v.type == 'date' && 'text' || v.type}}" class="validate" ng-class="{datepicker: v.type == 'date'}" ng-model="trabajadores.newWorker[v.value]"  novalidate formnovalidate>
                 <label class="active" for="adding_worker">{{v}}</label>
             </td>
         </tr>

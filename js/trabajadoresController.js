@@ -105,8 +105,11 @@
             self.getWorkers();
         };
         this.deleteWorker = function(workerToDelete){
+            console.log("deleting");
+            console.log(workerToDelete);
             var tempArray = [];
             self.worker.forEach(function(worker){
+                console.log(worker);
                 if (worker != workerToDelete){
                     tempArray.push(worker);
                 }

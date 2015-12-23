@@ -167,7 +167,9 @@
           Edit Hire section           ~####
          ################################*/
 
-
+        if ($localStorage.hire == undefined){
+            $localStorage.hire = {};
+        }
         this.hire= $localStorage.hire;
         this.hire.mode = "Preview";
         this.hire.preview = true;
@@ -188,13 +190,82 @@
 
         this.updateHire = function(){
             self.hire = $localStorage.hire;
+            console.log($localStorage.hire);
+
         };
+        this.updateLocalHire = function(){
+            $localStorage.hire = self.hire;
+            console.log($localStorage.hire);
+        };
+
+        this.addHireSection = function(section){
+
+            $localStorage.hire.sections.push(section);
+            self.updateHire();
+        };
+
         this.addHireVariable = function(variable){
+            if ($localStorage.hire.sections == undefined){
+                console.log("section undefined");
+                $localStorage.hire.sections == [{variables:[{variable:variable,text:""}]}];
+                self.updateHire();
+            }
+            else{
+                console.log("section defined");
+                console.log($localStorage.hire);
+                var last = $localStorage.hire.sections.length - 1;
+                $localStorage.hire.sections[last].variables.push({variable:variable,text:""});
+                self.updateHire();
+            }
 
-        }
+        };
 
+        this.removeHireVariable = function(variable){
+            $localStorage.hire.sections.forEach(function(section){
+                var sectionArray=[];
+               section.variables.forEach(function(element){
+                   if (element.variable != variable){
+                       sectionArray.push(element);
+                   }
+               });
+                section.variables = sectionArray;
+            });
+            self.updateHire();
+            self.checkEmptySections();
+        };
 
+        this.checkEmptySections = function(){
+          var array = [];
+            $localStorage.hire.sections.forEach(function(element){
+                if (element != {variables:[]}){
+                    array.push(element);
+                }
+            });
+            $localStorage.hire.sections = array;
+            self.updateHire();
+        };
 
+        this.checkSection = function(){
+          if ($localStorage.hire.sections == undefined){
+              $localStorage.hire.sections = [{number:0,name:"Contenedor",variables:[]}];
+              self.updateHire();
+          }
+        };
+
+        this.addVariable = function(value) {
+            console.log("adding"  + value.value);
+            console.log(self.selectedSession);
+            self.hire.sections[self.selectedSession].variables.push({
+                variable: value.value,
+                text: '',
+                centered: false,
+                justify: false,
+                right: false,
+                left: false
+            });
+            self.sectionSelected = false;
+            $localStorage.hire = self.hire;
+        };
 
    //##############################################################################
         /*#################################
@@ -203,7 +274,10 @@
 
 
         this.nominaExist = false;
-        this.nominas = [];
+        if ($localStorage.nominas == undefined){
+            $localStorage.nominas = [];
+        }
+        this.nominas = $localStorage.nominas;
 
         //nominas array final result should look like this
         //nominas=[{name:"nombre",payments:[{type:"tipo",price:"precio", editing=false}],discounts:[{type:"tipo",price:"precio",percent:"porciento", editing=false}],editing=false},{},{},{}];
@@ -222,6 +296,7 @@
                 self.nominas.push(object);
                 self.newNomina = "";
                 self.addingNomina = false;
+                self.updateNominas();
             }
         };
 
@@ -254,6 +329,7 @@
         };
 
         this.updateNominas = function(){
+            $localStorage.nominas = self.nominas;
           //http post operation with all data to update remotely the content of self.nominas
         };
 
@@ -290,6 +366,7 @@
             });
             self.nominas=[];
             self.nominas=newArray;
+            self.updateNominas();
         };
 
         //Update payment type
@@ -303,6 +380,7 @@
             });
             if (add) {
                 this.selectedNomina.payments.push(payment);
+                self.updateNominas();
             }
         };
 
@@ -325,6 +403,7 @@
             });
             if (add){
                 this.selectedNomina.discounts.push(discount);
+                self.updateNominas();
             }
         };
 
