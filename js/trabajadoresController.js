@@ -84,8 +84,8 @@
             });
         };
 
-        this.values = ["nombre","apellidos","direccion"];
-        this.worker =[{nombre:"noel",apellidos:"carcases Gomez",direccion:"desconocida"},{nombre:"lysandra",apellidos:"garcia grave de peralta",direccion:"con noel"}];
+        this.values = [{value:"nombre",type:"text"},{value:"apellidos",type:"text"},{value:"direccion",type:"text"},{value:"fecha",type:"date"},{value:"otro",type:"text"}];
+        this.worker =[{nombre:"noel",apellidos:"carcases Gomez",direccion:"desconocida"},{nombre:"lysandra",apellidos:"garcia grave de peralta",direccion:"con noel", fecha:""}];
         this.editingWorker = false;
         this.toggleEditing = function(worker){
             if (worker.editingWorker){

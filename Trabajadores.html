@@ -69,7 +69,7 @@
         <thead>
             <tr >
                 <th ng-repeat="val in trabajadores.values">
-                    {{val}}
+                    {{val.value}}
                 </th>
                 <th>
                     Editar
@@ -83,16 +83,20 @@
         <tr ng-repeat="data in trabajadores.worker | filter:workerFilter:strict track by $index">
             <td ng-repeat="value in trabajadores.values">
                 <div class="container" ng-show="!data.editingWorker">
-                    {{data[value]}}
+                    {{data[value.value]}}
+                    {{data}}
                 </div>
                 <div class="input-field col s4" ng-show="data.editingWorker">
-                    <input value="{{data[value]}}" id="{{data[value]}}_id" type="text" class="validate" ng-model="data[value]">
-                    <label class="active" for="{{data[value]}}_id">{{value}}</label>
+                    <input value="{{data[value.value]}}" id="{{data[value.value]}}_id" type="{{value.type}}" class="validate" ng-class="{datepicker: value.type == 'date'}" ng-model="data[value.value]">
+                    <label class="active" for="{{data[value.value]}}_id">{{value.value}}</label>
                 </div>
             </td>
             <td>
                 <p>
-                    <input type="checkbox" id="{{data}}_id" ng-click="trabajadores.toggleEditing(data)" />
+                    <input type="checkbox" id="{{data}}_id" ng-click="trabajadores.toggleEditing(data)" onclick=" $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });" />
                     <label for="{{data}}_id">Editar</label>
                 </p>
             </td>
@@ -102,7 +106,7 @@
         </tr>
         <tr ng-show="trabajadores.adding">
             <td ng-repeat="v in trabajadores.values">
-                <input id="adding_worker" type="text" class="validate" ng-model="trabajadores.newWorker[v]">
+                <input id="adding_worker" type="{{v.type}}" class="validate" ng-class="{datepicker: v.type == 'date'}" ng-model="trabajadores.newWorker[v.value]">
                 <label class="active" for="adding_worker">{{v}}</label>
             </td>
         </tr>
@@ -111,7 +115,10 @@
         <div class="row">
             <div class="col s2 offset-s5">
 
-                <a class="btn-floating btn-large waves-effect waves-light red" ng-click="trabajadores.adding = true" ng-show="!trabajadores.adding"><i class="material-icons">add</i></a>
+                <a class="btn-floating btn-large waves-effect waves-light red" ng-click="trabajadores.adding = true" ng-show="!trabajadores.adding" onclick=" $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });"><i class="material-icons">add</i></a>
                 <a class="btn-floating btn-large waves-effect waves-light green" ng-click="trabajadores.adding = false;trabajadores.addWorker(trabajadores.newWorker)" ng-show="trabajadores.adding"><i class="material-icons">done</i></a>
 
             </div>

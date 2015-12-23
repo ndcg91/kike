@@ -13,8 +13,8 @@
                     <h5>{{name.value}}</h5>
                 </div>
                 <div class="container" ng-show="name.editing">
-                    <input placeholder="value" id="{{name.value}}_value" type="text" ng-model="name.value">
-                    <label for="{{name.value}}_value">Decoracion</label>
+                    <input placeholder="value" id="{{name.value}}_value" type="text" ng-model="name.type">
+                    <label for="{{name.value}}_value">Tipo</label>
                 </div>
             </div>
             <div class="col s1">
@@ -51,11 +51,11 @@
             <label class="active" for="busqueda">Buscar</label>
         </div>
         <div class="container">
-            <div class="row" ng-repeat="icon in settings.icons | filter:searchText" >
+            <div class="row" ng-repeat="input in settings.inputType | filter:searchText" >
                 <div class="col s1">
                     <p>
-                        <input type="checkbox" id="{{icon}}_checkBox" ng-click="settings.selectedDecoration=icon;settings.iconSelected=true;settings.searchText=icon" />
-                        <label for="{{icon}}_checkBox"></label>
+                        <input type="checkbox" id="{{input}}_checkBox" ng-click="settings.selectedInput=input;settings.inputSelected=true;settings.searchText=input" />
+                        <label for="{{input}}_checkBox">{{input}}</label>
                     </p>
                 </div>
                 <div class="col s5">
@@ -65,6 +65,6 @@
         </div>
     </div>
     <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn green" ng-click="settings.addWorkerValue(addValue)">Agregar</a>
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn green" ng-click="settings.addWorkerValue({value:addValue,type:settings.selectedInput})">Agregar</a>
     </div>
 </div>
