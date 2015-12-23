@@ -512,3 +512,1080 @@ algo ha pasado
 [0mGET /manager/html [33m404 [0m1.324 ms - 25[0m
 [0mGET /manager/html [33m404 [0m0.717 ms - 25[0m
 [0mGET /manager/html [33m404 [0m0.689 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.709 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.751 ms - 25[0m
+[0mGET http://www.baidu.com/?rands=_19492755496579876120064 [33m404 [0m0.574 ms - 64[0m
+[0mGET http://www.haosou.com/?rands=_54182824744426624089032 [33m404 [0m0.347 ms - 65[0m
+[0mGET http://www.sogou.com/?rands=_2674878768023864317144896 [33m404 [0m0.476 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_764861479030598262747920 [33m404 [0m4.576 ms - 69[0m
+[0mGET /manager/html [33m404 [0m0.663 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.885 ms - 25[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m9.696 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m14.327 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m16.073 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m12.242 ms - -[0m
+[0mGET /api/trabajadores/get [36m304 [0m17.993 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m14.882 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m7.637 ms - -[0m
+[0mGET /api/trabajadores/get [36m304 [0m17.650 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m31.142 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m5.675 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m12.476 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m13.144 ms - -[0m
+[0mGET http://zc.qq.com/cgi-bin/chs/numreg/init? [33m404 [0m1.264 ms - 53[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m7.310 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m11.940 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m17.152 ms - -[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=144976515499&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.254 ms - 108[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m8.249 ms - -[0m
+[0mGET /api/trabajadores/get [36m304 [0m16.220 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m13.379 ms - -[0m
+[0mGET http://www.baidu.com/?rands=_1873012547261553885837484 [33m404 [0m1.147 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_5250131457618994951157544 [33m404 [0m0.430 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_2355227725032607904256400 [33m404 [0m0.375 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_112389885721283644710952 [33m404 [0m0.298 ms - 69[0m
+[0mGET http://www.baidu.com/?rands=_5316232447813727281179200 [33m404 [0m0.625 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_2191521601143792960733336 [33m404 [0m0.439 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_1227693996048544501804944 [33m404 [0m0.289 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_2736150542215441302759028 [33m404 [0m0.265 ms - 70[0m
+[0mGET http://www.baidu.com/?rands=_1311112927481824126861604 [33m404 [0m1.198 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_6962144102678544517088 [33m404 [0m0.311 ms - 63[0m
+[0mGET http://m.haosou.com/?rands=_7035494546740402962284 [33m404 [0m0.265 ms - 62[0m
+[0mGET http://www.1dvj.com/?rands=_12528195752041844606210036 [33m404 [0m0.353 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_1308075902411303705631144 [33m404 [0m0.532 ms - 70[0m
+[0mOPTIONS / [33m404 [0m1.186 ms - 17[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=144978099937&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.317 ms - 108[0m
+[0mGET http://www.baidu.com/?rands=_98914325604872601275920 [33m404 [0m0.649 ms - 64[0m
+[0mGET http://www.haosou.com/?rands=_3350677455037644123531060 [33m404 [0m0.264 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_35325118954012506342956400 [33m404 [0m5.846 ms - 67[0m
+[0mGET /manager/html [33m404 [0m0.877 ms - 25[0m
+[0mGET /manager/html [33m404 [0m1.427 ms - 25[0m
+[0mGET http://www.haosou.com/?rands=_212804118443070368559160 [33m404 [0m2.557 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_2394121405012353042226584 [33m404 [0m0.627 ms - 70[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=144979652019&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.440 ms - 108[0m
+[0mGET http://www.baidu.com/?rands=_18348167944027752493456168 [33m404 [0m0.556 ms - 67[0m
+[0mGET http://www.haosou.com/?rands=_2310010886767547403274992 [33m404 [0m0.274 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_1668110329902391301696320 [33m404 [0m0.708 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_216997552018085924198024 [33m404 [0m0.282 ms - 69[0m
+[0mGET /manager/html [33m404 [0m0.641 ms - 25[0m
+[0mGET http://www.baidu.com/?rands=_1364085939247573611775832 [33m404 [0m1.414 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_956093555044656923701280 [33m404 [0m0.476 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_2925936542755293380632 [33m404 [0m0.413 ms - 67[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=144981257377&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.231 ms - 108[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m5.442 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m14.006 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m14.590 ms - -[0m
+[0mGET /manager/html [33m404 [0m0.824 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.734 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.682 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.626 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.622 ms - 25[0m
+[0mGET http://www.baidu.com/?rands=_12136140831625215125214672 [33m404 [0m0.540 ms - 67[0m
+[0mGET http://www.haosou.com/?rands=_328842566417759822823632 [33m404 [0m0.256 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_21725137379238591283938440 [33m404 [0m0.512 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_16190221707225117504208640 [33m404 [0m0.272 ms - 71[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=144982791609&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.266 ms - 108[0m
+[0mGET http://www.baidu.com/?rands=_39402139390338832951112 [33m404 [0m0.657 ms - 64[0m
+[0mGET http://www.sogou.com/?rands=_1364077882445631831746720 [33m404 [0m0.270 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_31273129636430296144396 [33m404 [0m0.378 ms - 68[0m
+[0mGET / [33m404 [0m0.600 ms - 13[0m
+[0mGET /HNAP1/ [33m404 [0m0.424 ms - 19[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=144984384191&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.288 ms - 108[0m
+[0mGET http://www.baidu.com/?rands=_86101701778132225948640 [33m404 [0m0.755 ms - 64[0m
+[0mGET http://www.sogou.com/?rands=_193524466902222851974528 [33m404 [0m0.666 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_855043932039774574865504 [33m404 [0m0.339 ms - 69[0m
+[0mGET / [33m404 [0m0.917 ms - 13[0m
+[0mGET /robots.txt [33m404 [0m0.382 ms - 23[0m
+[0mGET /sitemap.xml [33m404 [0m0.415 ms - 24[0m
+[0mGET http://www.baidu.com/?rands=_10179655057501250426418775428 [33m404 [0m0.746 ms - 70[0m
+[0mGET http://www.sogou.com/?rands=_165729441368834282480256 [33m404 [0m0.603 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_7035408538499772032940 [33m404 [0m0.971 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_2611011659509319054884800 [33m404 [0m0.366 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_203446008820546762829480 [33m404 [0m0.305 ms - 69[0m
+[0mGET http://www.baidu.com/?rands=_3411250822417188384830072 [33m404 [0m0.959 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_383655868423224383986304 [33m404 [0m0.350 ms - 65[0m
+[0mGET http://m.haosou.com/?rands=_8872113484014605445188512 [33m404 [0m0.218 ms - 65[0m
+[0mGET http://www.1dvj.com/?rands=_1503949414010800601976880 [33m404 [0m0.422 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_2616094878013509306374880 [33m404 [0m0.348 ms - 70[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=144985942927&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.322 ms - 108[0m
+[0mGET http://www.baidu.com/?rands=_63701496768841812962600 [33m404 [0m0.541 ms - 64[0m
+[0mGET http://www.baidu.com/?rands=_41943098562255401620540 [33m404 [0m0.372 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_171042252167218481799408 [33m404 [0m0.386 ms - 69[0m
+[0mGET http://www.haosou.com/?rands=_14322164429234682224325316 [33m404 [0m0.335 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_3804013882548560506896 [33m404 [0m0.272 ms - 63[0m
+[0mGET http://www.kuaidaili.com/?rands=_1092010699219210801299900 [33m404 [0m0.227 ms - 70[0m
+[0mGET http://www.baidu.com/?rands=_38709788002497501238400 [33m404 [0m0.660 ms - 64[0m
+[0mGET http://www.haosou.com/?rands=_22500113590232676756011156 [33m404 [0m0.333 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_38106745760150672004402260 [33m404 [0m0.512 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_1373471530026683563591360 [33m404 [0m0.381 ms - 70[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=144987551927&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.251 ms - 108[0m
+[0mGET http://www.baidu.com/?rands=_4932138305214908831674240 [33m404 [0m0.957 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_1718513940962354882602400 [33m404 [0m0.310 ms - 67[0m
+[0mGET http://www.baidu.com/?rands=_981612033263556802385984 [33m404 [0m0.626 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_4141810436409876368708660 [33m404 [0m0.384 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_10850153780214725484104 [33m404 [0m0.847 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_315012960023320712197488 [33m404 [0m0.254 ms - 69[0m
+[0mGET /manager/html [33m404 [0m0.671 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.859 ms - 25[0m
+[0mGET http://www.baidu.com/?rands=_12400195720245400505152 [33m404 [0m0.565 ms - 64[0m
+[0mGET http://www.haosou.com/?rands=_2961141896231737424008480 [33m404 [0m0.311 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_10629724141711140656880 [33m404 [0m0.246 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_28622166894029862004406960 [33m404 [0m0.321 ms - 71[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=144989110893&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.243 ms - 108[0m
+[0mGET /w00tw00t.at.ISC.SANS.DFind:) [33m404 [0m0.662 ms - 41[0m
+[0mGET http://www.baidu.com/?rands=_7700125809230892683808068 [33m404 [0m0.578 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_27910152879610286521007304 [33m404 [0m1.457 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_677047433486542582368 [33m404 [0m0.365 ms - 62[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=144990683291&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.494 ms - 108[0m
+[0mHEAD / [33m404 [0m0.655 ms - 14[0m
+[0mGET http://www.baidu.com/?rands=_486033007814227414997664 [33m404 [0m0.706 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_2083988350013370407418892 [33m404 [0m0.304 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_205301465200960961455220 [33m404 [0m0.481 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_1008217000015718323306612 [33m404 [0m0.363 ms - 70[0m
+[0mGET http://zc.qq.com/cgi-bin/chs/numreg/init? [33m404 [0m0.587 ms - 53[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=144992226165&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.526 ms - 108[0m
+[0mGET http://www.baidu.com/?rands=_38401224023588407923168 [33m404 [0m0.547 ms - 64[0m
+[0mGET http://www.haosou.com/?rands=_2370089087840715523170640 [33m404 [0m0.473 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_5571126424239261368380584 [33m404 [0m0.233 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_29120168971416859012165400 [33m404 [0m0.326 ms - 71[0m
+[0mGET http://www.baidu.com/?rands=_280083345034090352347800 [33m404 [0m6.980 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_26642144025628178221141824 [33m404 [0m0.451 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_69442735230485043049248 [33m404 [0m0.270 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_5166397848296430011230520 [33m404 [0m0.314 ms - 70[0m
+[0mGET http://www.baidu.com/?rands=_3764850585831754884987200 [33m404 [0m0.951 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_4500146064020943151157544 [33m404 [0m0.303 ms - 66[0m
+[0mGET http://m.haosou.com/?rands=_1180826470010156773158124 [33m404 [0m0.331 ms - 65[0m
+[0mGET http://www.1dvj.com/?rands=_11556108584024560912992800 [33m404 [0m0.402 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_1989637241617599084843872 [33m404 [0m0.491 ms - 70[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.629 ms - 46[0m
+[0mGET http://t18.proxy-checks.com/favicon.ico [33m404 [0m0.943 ms - 51[0m
+[0mPOST http://t18.proxy-checks.com/favicon.ico [33m404 [0m0.228 ms - 52[0m
+[0mGET http://46.38.62.196/favicon.ico [33m404 [0m0.231 ms - 43[0m
+[0mPOST http://t1.proxy-checks.com/favicon.ico [33m404 [0m0.384 ms - 51[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=144993821091&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.367 ms - 108[0m
+[0mGET /manager/html [33m404 [0m0.669 ms - 25[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.723 ms - 46[0m
+[0mGET http://www.haosou.com/?rands=_835241568020952061640324 [33m404 [0m0.580 ms - 66[0m
+[0mGET http://www.baidu.com/?rands=_158311893704029960558792 [33m404 [0m0.563 ms - 65[0m
+[0mGET http://www.sogou.com/?rands=_2968815747932941855434541264 [33m404 [0m0.269 ms - 69[0m
+[0mGET http://www.kuaidaili.com/?rands=_2104391368024365524201416 [33m404 [0m0.430 ms - 70[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.703 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.592 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.258 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.638 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.580 ms - 46[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=144995405087&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.263 ms - 108[0m
+[0mGET http://www.baidu.com/?rands=_480614154217690404106160 [33m404 [0m0.627 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_1484410416929180544021928 [33m404 [0m0.492 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_1436414727908859696358716 [33m404 [0m0.626 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_4191155330047304001641924 [33m404 [0m0.325 ms - 70[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.605 ms - 46[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=144997002987&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.353 ms - 108[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.197 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_17661100886413378564090064 [33m404 [0m0.658 ms - 67[0m
+[0mGET http://www.haosou.com/?rands=_1353684290016063745343168 [33m404 [0m0.310 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_283251831149680404636652 [33m404 [0m0.446 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_710111126501474806522900 [33m404 [0m0.286 ms - 69[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=144998579053&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.242 ms - 108[0m
+[0mGET /manager/html [33m404 [0m0.833 ms - 25[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.599 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.608 ms - 46[0m
+[0mGET http://www.haosou.com/?rands=_243765140814177287919280 [33m404 [0m0.578 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_12251440015009964328064 [33m404 [0m0.344 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_98641175650142182941832 [33m404 [0m0.249 ms - 68[0m
+[0mGET /manager/html [33m404 [0m0.750 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.753 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.710 ms - 25[0m
+[0mGET http://zc.qq.com/cgi-bin/chs/numreg/init? [33m404 [0m0.432 ms - 53[0m
+[0mGET http://www.baidu.com/?rands=_1484410416928500503903636 [33m404 [0m0.671 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_145206280563684984429528 [33m404 [0m0.239 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_29310134817623706004386604 [33m404 [0m1.516 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_17217108288027198724746044 [33m404 [0m1.114 ms - 71[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145000162533&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.250 ms - 108[0m
+[0mGET http://www.baidu.com/?rands=_2665094542994558594628 [33m404 [0m0.880 ms - 63[0m
+[0mGET http://www.sogou.com/?rands=_634290652826971891187972 [33m404 [0m0.317 ms - 65[0m
+[0mGET http://m.haosou.com/?rands=_12528122345030221105027172 [33m404 [0m0.394 ms - 66[0m
+[0mGET http://www.1dvj.com/?rands=_166324659141606953335104 [33m404 [0m0.393 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_2110448413221984663820536 [33m404 [0m0.242 ms - 70[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.107 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.833 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.734 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_145205233803059232357940 [33m404 [0m0.900 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_26327308606951423056832 [33m404 [0m0.478 ms - 65[0m
+[0mGET http://www.sogou.com/?rands=_350468986909116647798800 [33m404 [0m1.133 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_4820193970039677497939840 [33m404 [0m0.310 ms - 70[0m
+[0mGET /manager/html [33m404 [0m0.651 ms - 25[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.672 ms - 46[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145001781787&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.279 ms - 108[0m
+[0mGET http://www.baidu.com/?rands=_19376130523226340511081728 [33m404 [0m0.678 ms - 67[0m
+[0mGET http://www.haosou.com/?rands=_122464689358430348007377744 [33m404 [0m0.254 ms - 69[0m
+[0mGET http://www.sogou.com/?rands=_381629229811000612115540 [33m404 [0m0.467 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_2088812434410806602118200 [33m404 [0m0.360 ms - 70[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.835 ms - 46[0m
+[0mGET /manager/html [33m404 [0m0.633 ms - 25[0m
+[0mGET http://www.baidu.com/?rands=_1242471220023890805445576 [33m404 [0m1.684 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_631212461681474806139200 [33m404 [0m0.242 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_2984022796419297504296920 [33m404 [0m0.308 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_1480510066321000755566720 [33m404 [0m0.545 ms - 70[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145003347169&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.347 ms - 108[0m
+[0mGET http://zc.qq.com/cgi-bin/chs/numreg/init? [33m404 [0m0.630 ms - 53[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.958 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_3393562818027930183268320 [33m404 [0m0.621 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_17658100142039284135107712 [33m404 [0m0.641 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_363966048027464013939012 [33m404 [0m0.504 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_151691664003335404806984 [33m404 [0m0.312 ms - 69[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145004917495&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.257 ms - 108[0m
+[0mGET http://www.sogou.com/?rands=_1428916144883726003997296 [33m404 [0m0.656 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_23872221056856809016098320 [33m404 [0m0.881 ms - 71[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.627 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.664 ms - 46[0m
+[0mGET HTTP://51.254.206.142/httptest.php [33m404 [0m0.688 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_22266189955615640926860936 [33m404 [0m0.576 ms - 67[0m
+[0mGET http://www.haosou.com/?rands=_1409880787613122481644860 [33m404 [0m0.369 ms - 67[0m
+[0mGET HTTP://51.254.206.142/httptest.php [33m404 [0m0.620 ms - 46[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145006543687&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.248 ms - 108[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.632 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_19750127566439510123723616 [33m404 [0m0.566 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_2600850463705394537164 [33m404 [0m1.113 ms - 63[0m
+[0mGET http://m.haosou.com/?rands=_417951307230873963997444 [33m404 [0m0.264 ms - 64[0m
+[0mGET http://www.1dvj.com/?rands=_9680149688612544354450944 [33m404 [0m0.262 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_127474568341010889178536 [33m404 [0m0.286 ms - 69[0m
+[0mGET /manager/html [33m404 [0m0.954 ms - 25[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.573 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_2590495041827913023789552 [33m404 [0m0.828 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_1569665807627424773910592 [33m404 [0m0.481 ms - 70[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145008106669&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.243 ms - 108[0m
+[0mGET http://zc.qq.com/cgi-bin/chs/numreg/init? [33m404 [0m0.622 ms - 53[0m
+[0mGET http://www.haosou.com/?rands=_22154121181419683722443792 [33m404 [0m0.838 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_943016956027922053535620 [33m404 [0m0.444 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_80156523261722768125584 [33m404 [0m0.254 ms - 68[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.551 ms - 46[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145009740201&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.251 ms - 108[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.730 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.898 ms - 46[0m
+[0mGET http://www.haosou.com/?rands=_1692011184801111950615296 [33m404 [0m0.941 ms - 67[0m
+[0mGET http://www.haosou.com/?rands=_48166692804046401077648 [33m404 [0m0.572 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_740182476829801761177404 [33m404 [0m0.366 ms - 69[0m
+[0mGET http://www.sogou.com/?rands=_130684187042572536312384 [33m404 [0m0.674 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_280090012638960402839200 [33m404 [0m0.577 ms - 69[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145011492481&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.348 ms - 108[0m
+[0mGET http://www.baidu.com/?rands=_789019137582396559720400 [33m404 [0m0.705 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_212313360015693722313388 [33m404 [0m0.583 ms - 66[0m
+[0mGET http://www.baidu.com/?rands=_11250152250035650803542240 [33m404 [0m0.724 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_109601276420144970842496 [33m404 [0m0.261 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_26379134817624364504386604 [33m404 [0m0.315 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_1765882974833354454788480 [33m404 [0m1.010 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_140003062837745372044640 [33m404 [0m0.397 ms - 69[0m
+[0mGET http://www.kuaidaili.com/?rands=_3374105298022561714466160 [33m404 [0m0.632 ms - 70[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145013058679&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.236 ms - 108[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.843 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.375 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.691 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.920 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_54182824745009074711276 [33m404 [0m0.637 ms - 64[0m
+[0mGET http://www.sogou.com/?rands=_170243576542522088439340 [33m404 [0m0.663 ms - 65[0m
+[0mGET http://m.haosou.com/?rands=_191941636320215952845856 [33m404 [0m0.298 ms - 64[0m
+[0mGET http://www.1dvj.com/?rands=_6092042002597376517088 [33m404 [0m0.261 ms - 62[0m
+[0mGET http://www.kuaidaili.com/?rands=_4500121720018507901050364 [33m404 [0m0.283 ms - 70[0m
+[0mGET http://www.baidu.com/?rands=_4191119826035916001237392 [33m404 [0m0.597 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_22154125669620152382490788 [33m404 [0m0.321 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_1194913949508161561942200 [33m404 [0m0.400 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_32907027506289382773792 [33m404 [0m0.239 ms - 68[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145014591403&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.407 ms - 108[0m
+[0mGET http://www.haosou.com/?rands=_2046049201636925685973264 [33m404 [0m0.694 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_40811759418359463357216 [33m404 [0m1.698 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_181524070543243931456 [33m404 [0m0.285 ms - 66[0m
+[0mGET http://www.google.com/reader/about/ [33m404 [0m1.182 ms - 47[0m
+[0mGET http://www.baidu.com/?rands=_228056331012385445244720 [33m404 [0m1.430 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_18126139134221558362725768 [33m404 [0m0.260 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_18126112205018277742396796 [33m404 [0m0.953 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_835250228024811651807704 [33m404 [0m1.642 ms - 69[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145016176091&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.517 ms - 108[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.183 ms - 46[0m
+[0mGET /manager/html [33m404 [0m2.187 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.854 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.697 ms - 25[0m
+[0mGET http://www.google.com/reader/about/ [33m404 [0m0.623 ms - 47[0m
+[0mGET http://www.google.com/reader/about/ [33m404 [0m0.669 ms - 47[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.170 ms - 46[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145017711813&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.246 ms - 108[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.649 ms - 46[0m
+[0mGET http://www.haosou.com/?rands=_69963796641478786900944 [33m404 [0m0.577 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_257501695509438394461684 [33m404 [0m0.542 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_31130117348429502726455072 [33m404 [0m0.311 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_1707013949508388272071680 [33m404 [0m0.460 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_3450712660668002858739148 [33m404 [0m0.287 ms - 70[0m
+[0mGET http://www.kuaidaili.com/?rands=_1080817931234111472052380 [33m404 [0m0.302 ms - 70[0m
+[0mGET http://www.google.com/reader/about/ [33m404 [0m0.661 ms - 47[0m
+[0mGET http://www.haosou.com/?rands=_55689196609037534506626572 [33m404 [0m0.851 ms - 68[0m
+[0mGET http://www.kuaidaili.com/?rands=_945719852437284632276276 [33m404 [0m0.324 ms - 69[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.760 ms - 46[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145019330091&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.279 ms - 108[0m
+[0mGET http://zc.qq.com/cgi-bin/chs/numreg/init? [33m404 [0m1.036 ms - 53[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.616 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_173361530883531605379244 [33m404 [0m0.615 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_83798479705243493633552 [33m404 [0m1.325 ms - 65[0m
+[0mGET http://www.sogou.com/?rands=_9790161083440564925534472 [33m404 [0m0.636 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_5340133310433189484369320 [33m404 [0m0.395 ms - 70[0m
+[0mGET http://www.baidu.com/?rands=_1883088030212543572375324 [33m404 [0m0.659 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_401445135632023056034156 [33m404 [0m0.231 ms - 65[0m
+[0mGET http://m.haosou.com/?rands=_860482863036387123028320 [33m404 [0m0.272 ms - 64[0m
+[0mGET http://www.1dvj.com/?rands=_14650136432845391328150940 [33m404 [0m0.304 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_145533373861233243269280 [33m404 [0m0.322 ms - 69[0m
+[0mGET http://www.sogou.com/?rands=_572442985016297203143088 [33m404 [0m0.780 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_1903513981001482600858176 [33m404 [0m0.356 ms - 70[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145020895809&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.265 ms - 108[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.723 ms - 46[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145022472373&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.283 ms - 108[0m
+[0mGET http://www.baidu.com/?rands=_137408224981949448154976 [33m404 [0m0.755 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_24561112503638452051288872 [33m404 [0m0.586 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_89282524830485043248112 [33m404 [0m0.305 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_32380117670836016805052736 [33m404 [0m0.289 ms - 71[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.653 ms - 46[0m
+[0mGET http://zc.qq.com/cgi-bin/chs/numreg/init? [33m404 [0m0.579 ms - 53[0m
+[0mGET HTTP://51.254.206.142/httptest.php [33m404 [0m0.591 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.893 ms - 46[0m
+[0mGET http://www.haosou.com/?rands=_154501424228228343674328 [33m404 [0m1.009 ms - 66[0m
+[0mGET http://www.baidu.com/?rands=_181984704021298623001152 [33m404 [0m0.355 ms - 65[0m
+[0mGET http://www.sogou.com/?rands=_1242468371223293535445576 [33m404 [0m0.288 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_28233855450615606654544 [33m404 [0m0.248 ms - 68[0m
+[0mGET /manager/html [33m404 [0m0.753 ms - 25[0m
+[0mGET /manager/html [33m404 [0m1.318 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.763 ms - 25[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.443 ms - 46[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145024060351&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.278 ms - 108[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.262 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.856 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.857 ms - 46[0m
+[0mGET /manager/html [33m404 [0m0.726 ms - 25[0m
+[0mPOST http://check.best-proxies.ru/azenv.php?auth=145025285091419&a=PC&i=2160541200&p=8080 [33m404 [0m0.227 ms - 109[0m
+[0mGET /manager/html [33m404 [0m0.759 ms - 25[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.806 ms - 46[0m
+[0mGET http://www.google.com/reader/about/ [33m404 [0m0.844 ms - 47[0m
+[0mGET http://www.baidu.com/?rands=_6502073085700606405408 [33m404 [0m1.171 ms - 63[0m
+[0mGET http://www.sogou.com/?rands=_9045709566962523717376 [33m404 [0m0.316 ms - 63[0m
+[0mGET http://m.haosou.com/?rands=_13653167914627616565407808 [33m404 [0m0.300 ms - 66[0m
+[0mGET http://www.1dvj.com/?rands=_16216176401826496662017392 [33m404 [0m0.330 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_1775231795629764176389472 [33m404 [0m0.319 ms - 70[0m
+[0mGET http://www.baidu.com/?rands=_1637492048430761641074060 [33m404 [0m2.186 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_1536314507489295112330640 [33m404 [0m0.540 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_29310185374232925005879916 [33m404 [0m0.489 ms - 67[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145027295115&a=PSCMN&i=2160541200&p=8080 [33m404 [0m1.878 ms - 108[0m
+[0mGET http://www.baidu.com/?rands=_216701664003825905608148 [33m404 [0m0.706 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_4330194073628965607445416 [33m404 [0m1.319 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_28300148942238580487820568 [33m404 [0m1.572 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_994812205201565101563776 [33m404 [0m0.447 ms - 69[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.751 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.037 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.835 ms - 46[0m
+[0mGET http://www.google.com/reader/about/ [33m404 [0m0.846 ms - 47[0m
+[0mGET http://www.baidu.com/?rands=_2776548459611517601515312 [33m404 [0m0.651 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_44532214466017001007452396 [33m404 [0m1.321 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_206601528750784320737568 [33m404 [0m0.593 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_867912461681585417162400 [33m404 [0m1.161 ms - 69[0m
+[0mGET / [33m404 [0m1.184 ms - 13[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145028947237&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.546 ms - 108[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.027 ms - 46[0m
+[0mGET http://www.google.com/reader/about/ [33m404 [0m0.612 ms - 47[0m
+[0mGET http://www.baidu.com/?rands=_4120020346010164424636652 [33m404 [0m0.666 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_8768772570103152332536 [33m404 [0m0.268 ms - 64[0m
+[0mGET http://www.sogou.com/?rands=_1197011603807232405147532 [33m404 [0m0.626 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_481610708486474241685552 [33m404 [0m0.309 ms - 69[0m
+[0mGET http://www.baidu.com/?rands=_38232107263011585739488540 [33m404 [0m1.023 ms - 67[0m
+[0mGET http://www.haosou.com/?rands=_20140139134221558362725768 [33m404 [0m0.354 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_943015700024025953214200 [33m404 [0m0.257 ms - 65[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.125 ms - 46[0m
+[0mGET http://zc.qq.com/cgi-bin/chs/numreg/init? [33m404 [0m0.946 ms - 53[0m
+[0mGET http://www.baidu.com/?rands=_669280190038868063140480 [33m404 [0m0.614 ms - 65[0m
+[0mGET http://www.sogou.com/?rands=_18243176401827142922094984 [33m404 [0m0.324 ms - 67[0m
+[0mGET http://m.haosou.com/?rands=_1553465356815107043726348 [33m404 [0m0.240 ms - 65[0m
+[0mGET http://www.1dvj.com/?rands=_22050207738411193428384040 [33m404 [0m0.255 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_312245135632804106034156 [33m404 [0m0.301 ms - 69[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145030578403&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.331 ms - 108[0m
+[0mGET http://www.haosou.com/?rands=_1981081241221181444717168 [33m404 [0m1.263 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_13734772524296484022904896 [33m404 [0m1.908 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_754415700025974003342768 [33m404 [0m0.534 ms - 69[0m
+[0mGET http://www.haosou.com/?rands=_15040124749224095617333760 [33m404 [0m0.777 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_16060129792413962964141984 [33m404 [0m0.953 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_835257156027017132042036 [33m404 [0m0.440 ms - 69[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.300 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.762 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_1131618840028571403599904 [33m404 [0m0.988 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_592154828826631361077624 [33m404 [0m0.346 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_1856895104830554942795980 [33m404 [0m0.832 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_1624784915026291462338456 [33m404 [0m0.570 ms - 70[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145032126977&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.720 ms - 108[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.009 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.273 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.734 ms - 46[0m
+[0mGET / [33m404 [0m1.792 ms - 13[0m
+[0mGET http://www.baidu.com/?rands=_183683108011247663221712 [33m404 [0m1.898 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_943018840029220753599904 [33m404 [0m0.670 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_26328141514423859063217800 [33m404 [0m0.645 ms - 71[0m
+[0mGET http://zc.qq.com/cgi-bin/chs/numreg/init? [33m404 [0m0.645 ms - 53[0m
+[0mGET /cgi-bin/login.cgi [33m404 [0m1.020 ms - 30[0m
+[0mGET http://www.baidu.com/?rands=_382327827308546857278880 [33m404 [0m1.462 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_249596017324415102528 [33m404 [0m0.510 ms - 63[0m
+[0mGET http://www.sogou.com/?rands=_3374121924026451665458640 [33m404 [0m0.319 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_2169649476682269840208 [33m404 [0m1.163 ms - 67[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145033940407&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.335 ms - 108[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m2.148 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_142989838002630431874880 [33m404 [0m0.696 ms - 65[0m
+[0mGET http://www.sogou.com/?rands=_6962144102678544528840 [33m404 [0m0.626 ms - 63[0m
+[0mGET http://m.haosou.com/?rands=_5192105408825157582820960 [33m404 [0m0.299 ms - 65[0m
+[0mGET http://www.1dvj.com/?rands=_8872135100017343966053264 [33m404 [0m0.291 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_9714163020019089303222240 [33m404 [0m0.309 ms - 70[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.981 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m2.333 ms - 46[0m
+[0mGET http://www.sogou.com/?rands=_4191119826036792001308780 [33m404 [0m0.806 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_19130108288027198724746044 [33m404 [0m0.656 ms - 71[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m2.182 ms - 46[0m
+[0mGET /manager/html [33m404 [0m1.122 ms - 25[0m
+[0mGET /manager/html [33m404 [0m1.296 ms - 25[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145035852527&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.568 ms - 108[0m
+[0mGET /manager/html [33m404 [0m1.141 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.692 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.791 ms - 25[0m
+[0mGET http://www.baidu.com/?rands=_26379162904628315505133260 [33m404 [0m0.629 ms - 67[0m
+[0mGET http://www.haosou.com/?rands=_12500200970040107153746600 [33m404 [0m0.745 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_710110681441364196011300 [33m404 [0m0.412 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_2133071845033634562747888 [33m404 [0m0.291 ms - 70[0m
+[0mGET http://www.google.com/reader/about/ [33m404 [0m0.739 ms - 47[0m
+[0mGET / [33m404 [0m0.762 ms - 13[0m
+[0mGET http://www.baidu.com/?rands=_88215070014460006265448 [33m404 [0m0.765 ms - 64[0m
+[0mGET http://www.haosou.com/?rands=_185942079100980400893592 [33m404 [0m0.370 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_6230133310432267554175128 [33m404 [0m0.357 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_2387217270015052053147040 [33m404 [0m0.339 ms - 70[0m
+[0mGET http://www.baidu.com/?rands=_69441893622245842320080 [33m404 [0m0.803 ms - 64[0m
+[0mGET http://www.sogou.com/?rands=_89283366439548164043568 [33m404 [0m0.495 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_2159544870010941721366752 [33m404 [0m0.253 ms - 70[0m
+[0mGET / [33m404 [0m1.928 ms - 13[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145038764953&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.272 ms - 108[0m
+[0mGET http://www.baidu.com/?rands=_710110236381290455883400 [33m404 [0m0.663 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_277807216001610701086792 [33m404 [0m0.266 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_657660462075273323240 [33m404 [0m0.857 ms - 62[0m
+[0mGET http://www.baidu.com/?rands=_152605692689098104462416 [33m404 [0m2.112 ms - 65[0m
+[0mGET http://www.sogou.com/?rands=_6092144102678544528840 [33m404 [0m0.261 ms - 63[0m
+[0mGET http://m.haosou.com/?rands=_4543101644224572522716480 [33m404 [0m0.312 ms - 65[0m
+[0mGET http://www.1dvj.com/?rands=_568359488406267785032944 [33m404 [0m0.223 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_163896091121255953228360 [33m404 [0m0.213 ms - 69[0m
+[0mGET http://www.haosou.com/?rands=_29310146052426998505039928 [33m404 [0m0.761 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_837911157507413215349396 [33m404 [0m0.279 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_2183288639233325111217268 [33m404 [0m0.390 ms - 70[0m
+[0mGET http://zc.qq.com/cgi-bin/chs/numreg/init? [33m404 [0m0.588 ms - 53[0m
+[0mGET HTTP://51.254.206.142/httptest.php [33m404 [0m0.648 ms - 46[0m
+[0mGET /manager/html [33m404 [0m1.089 ms - 25[0m
+[0mGET http://www.baidu.com/?rands=_125959075842085456157648 [33m404 [0m0.569 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_6728121548021673443518256 [33m404 [0m0.219 ms - 67[0m
+[0mGET http://www.baidu.com/?rands=_27753156934422640646856872 [33m404 [0m0.437 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_109601175650144970842496 [33m404 [0m0.657 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_157444040414996884116632 [33m404 [0m0.226 ms - 69[0m
+[0mGET /manager/html [33m404 [0m0.736 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.732 ms - 25[0m
+[0mGET http://www.baidu.com/?rands=_181523716582793262272 [33m404 [0m0.541 ms - 62[0m
+[0mGET http://www.haosou.com/?rands=_5887182322030641764659312 [33m404 [0m0.403 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_39488433007613463226656 [33m404 [0m1.151 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_2776546664811805541574736 [33m404 [0m0.583 ms - 70[0m
+[0mGET /manager/html [33m404 [0m0.667 ms - 25[0m
+[0mGET http://www.baidu.com/?rands=_13266144003626303253349320 [33m404 [0m0.731 ms - 67[0m
+[0mGET http://www.haosou.com/?rands=_17070178553611335502675920 [33m404 [0m0.268 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_740176947229801761177404 [33m404 [0m0.283 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_21798112520024502801041664 [33m404 [0m0.254 ms - 71[0m
+[0mGET /manager/html [33m404 [0m1.219 ms - 25[0m
+[0mGET //jmx-console/HtmlAdaptor [33m404 [0m0.868 ms - 37[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.623 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.760 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_12404728514593055122208 [33m404 [0m0.906 ms - 64[0m
+[0mGET http://www.sogou.com/?rands=_195371084952805032830584 [33m404 [0m0.377 ms - 65[0m
+[0mGET http://m.haosou.com/?rands=_22835507424211323177848 [33m404 [0m0.340 ms - 63[0m
+[0mGET http://www.1dvj.com/?rands=_445525840034402325329560 [33m404 [0m0.217 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_8040537550684872729948 [33m404 [0m0.333 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_1365611159606801301640080 [33m404 [0m0.601 ms - 70[0m
+[0mGET http://www.baidu.com/?rands=_130021730563629705264792 [33m404 [0m0.579 ms - 65[0m
+[0mGET http://www.sogou.com/?rands=_534015385020217604653648 [33m404 [0m0.558 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_26642135024027565651161856 [33m404 [0m0.434 ms - 71[0m
+[0mGET http://www.baidu.com/?rands=_32910190736827626283475224 [33m404 [0m1.522 ms - 67[0m
+[0mGET http://www.haosou.com/?rands=_158311371302811600393224 [33m404 [0m0.320 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_100816878414460005792584 [33m404 [0m0.434 ms - 69[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.623 ms - 46[0m
+[0mGET / [33m404 [0m0.696 ms - 13[0m
+[0mGET http://www.haosou.com/?rands=_177284569612268806987600 [33m404 [0m0.608 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_48169035285260321298704 [33m404 [0m0.456 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_294475703046912003514160 [33m404 [0m0.272 ms - 69[0m
+[0mGET http://www.google.com/reader/about/ [33m404 [0m0.551 ms - 47[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145049418737&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.248 ms - 108[0m
+[0mGET http://www.baidu.com/?rands=_312238910028117805351044 [33m404 [0m0.565 ms - 65[0m
+[0mGET http://www.sogou.com/?rands=_116973188007353601449712 [33m404 [0m0.327 ms - 65[0m
+[0mGET http://m.haosou.com/?rands=_1560348136015309184979776 [33m404 [0m0.260 ms - 65[0m
+[0mGET http://www.1dvj.com/?rands=_64193202195611851861148680 [33m404 [0m0.203 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_6962348302759712552344 [33m404 [0m0.346 ms - 67[0m
+[0mGET / [33m404 [0m0.690 ms - 13[0m
+[0mGET /robots.txt [33m404 [0m0.306 ms - 23[0m
+[0mGET /sitemap.xml [33m404 [0m0.413 ms - 24[0m
+[0mHEAD / [33m404 [0m0.649 ms - 14[0m
+[0mGET / [33m404 [0m0.646 ms - 13[0m
+[0mGET /HNAP1/ [33m404 [0m0.276 ms - 19[0m
+[0mGET http://www.baidu.com/?rands=_16060111890012339363624236 [33m404 [0m0.686 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_23037166125623231192960376 [33m404 [0m0.561 ms - 71[0m
+[0mGET /w00tw00t.at.ISC.SANS.DFind:) [33m404 [0m5.209 ms - 41[0m
+[0mGET /manager/html [33m404 [0m1.312 ms - 25[0m
+[0mGET http://www.baidu.com/?rands=_29617589706785913000224 [33m404 [0m0.569 ms - 64[0m
+[0mGET http://www.haosou.com/?rands=_1530464296015865922878748 [33m404 [0m0.451 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_168080011234090352402400 [33m404 [0m0.369 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_158311763103936240558792 [33m404 [0m0.778 ms - 69[0m
+[0mGET http://www.haosou.com/?rands=_28820159645219841134657524 [33m404 [0m0.389 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_1316716066809763746863376 [33m404 [0m0.402 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_30488432202452800880452 [33m404 [0m0.834 ms - 64[0m
+[0mGET http://www.baidu.com/?rands=_1373457224022977513112512 [33m404 [0m0.520 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_252083345037986392784600 [33m404 [0m0.383 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_236163216781008123622462492 [33m404 [0m0.259 ms - 68[0m
+[0mGET http://www.baidu.com/?rands=_28300162482440093447696432 [33m404 [0m0.772 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_1197016959409763746560580 [33m404 [0m0.499 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_28300139915434798087199888 [33m404 [0m0.293 ms - 71[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.691 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_939639150401015119016461524 [33m404 [0m0.887 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_2071259910417205244122768 [33m404 [0m0.306 ms - 66[0m
+[0mGET http://m.haosou.com/?rands=_279101430164961566971960 [33m404 [0m0.257 ms - 64[0m
+[0mGET http://www.1dvj.com/?rands=_125160904025339117810852 [33m404 [0m0.565 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_9316133020053962538138704 [33m404 [0m0.422 ms - 70[0m
+[0mGET http://www.baidu.com/?rands=_101643140281946784227780 [33m404 [0m0.918 ms - 65[0m
+[0mGET http://www.sogou.com/?rands=_1674045687236086466083880 [33m404 [0m0.793 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_177284284010905605823000 [33m404 [0m0.383 ms - 69[0m
+[0mGET http://www.elong.com/ [33m404 [0m1.072 ms - 33[0m
+[0mGET http://www.sogou.com/?rands=_27753201772827786248180128 [33m404 [0m0.614 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_754411932020129852764212 [33m404 [0m0.340 ms - 69[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.697 ms - 46[0m
+[0mGET HTTP://51.254.206.142/httptest.php [33m404 [0m0.638 ms - 46[0m
+[0mGET http://www.kuaidaili.com/?rands=_8821085049760504019344 [33m404 [0m0.738 ms - 67[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145057916967&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.235 ms - 108[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.221 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_346533075247781007067460 [33m404 [0m0.618 ms - 65[0m
+[0mGET http://www.sogou.com/?rands=_11333136936818084603090720 [33m404 [0m0.262 ms - 67[0m
+[0mGET http://m.haosou.com/?rands=_1744065059210752305206152 [33m404 [0m0.368 ms - 65[0m
+[0mGET http://www.1dvj.com/?rands=_1614080375410613792132944 [33m404 [0m0.310 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_2316842426826462404239120 [33m404 [0m0.246 ms - 70[0m
+[0mGET HTTP://51.254.206.142/httptest.php [33m404 [0m0.700 ms - 46[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145059598793&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.292 ms - 108[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.594 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_20517117965419755003453284 [33m404 [0m0.579 ms - 67[0m
+[0mGET http://www.haosou.com/?rands=_445242985014667482719980 [33m404 [0m0.404 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_221604426812268806987600 [33m404 [0m0.267 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_534020923624261125474880 [33m404 [0m0.361 ms - 69[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145061157605&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.245 ms - 108[0m
+[0mGET http://www.baidu.com/?rands=_1160610984681408591440320 [33m404 [0m0.624 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_1903513981001371405777216 [33m404 [0m0.360 ms - 67[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.620 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_5887145857624662883898608 [33m404 [0m0.608 ms - 66[0m
+[0mGET http://www.baidu.com/?rands=_1215918571632524891865800 [33m404 [0m0.331 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_21798153027230628501241984 [33m404 [0m0.251 ms - 68[0m
+[0mGET http://www.kuaidaili.com/?rands=_58302315025159264476288 [33m404 [0m0.379 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_151691264642746804120272 [33m404 [0m0.730 ms - 65[0m
+[0mGET http://www.baidu.com/?rands=_25470112835029502726206800 [33m404 [0m0.356 ms - 67[0m
+[0mGET http://www.haosou.com/?rands=_7672873340105940231208 [33m404 [0m0.469 ms - 64[0m
+[0mGET http://www.sogou.com/?rands=_160623386183888001983800 [33m404 [0m0.492 ms - 65[0m
+[0mGET http://www.baidu.com/?rands=_25002606144138060957412 [33m404 [0m0.783 ms - 64[0m
+[0mGET http://www.haosou.com/?rands=_98002945034841881769400 [33m404 [0m0.229 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_2387216579213122302541840 [33m404 [0m0.412 ms - 70[0m
+[0mGET http://www.sogou.com/?rands=_12084121181419215062349800 [33m404 [0m0.610 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_16250194880042780964155320 [33m404 [0m0.471 ms - 71[0m
+[0mPOST http://check.proxyradar.com/azenv.php?auth=145062743615&a=PSCMN&i=2160541200&p=8080 [33m404 [0m0.687 ms - 108[0m
+[0mGET http://www.baidu.com/?rands=_32241151669825681504946596 [33m404 [0m0.761 ms - 67[0m
+[0mGET http://www.haosou.com/?rands=_1169111691122484002664864 [33m404 [0m0.287 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_28300144428837824007944704 [33m404 [0m0.304 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_103057941361949448146960 [33m404 [0m0.646 ms - 69[0m
+[0mGET / [33m404 [0m0.704 ms - 13[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.609 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.702 ms - 46[0m
+[0mHEAD / [33m404 [0m0.705 ms - 14[0m
+[0mGET / [33m404 [0m0.387 ms - 13[0m
+[0mGET / [33m404 [0m0.651 ms - 13[0m
+[0mGET /manager/html [33m404 [0m0.843 ms - 25[0m
+[0mGET http://www.baidu.com/?rands=_1569691558434836874628864 [33m404 [0m0.778 ms - 66[0m
+[0mGET http://www.baidu.com/?rands=_58965647208974051096680 [33m404 [0m0.659 ms - 64[0m
+[0mGET http://www.haosou.com/?rands=_1624795104828423202541800 [33m404 [0m0.695 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_1823821969362869352798336 [33m404 [0m0.289 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_22666122196638718065247072 [33m404 [0m0.259 ms - 71[0m
+[0mGET http://www.baidu.com/?rands=_1668115740803905792678400 [33m404 [0m0.863 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_1687105056018527044435648 [33m404 [0m0.332 ms - 66[0m
+[0mGET http://m.haosou.com/?rands=_4383026183204346100804304 [33m404 [0m0.305 ms - 65[0m
+[0mGET http://www.1dvj.com/?rands=_65934109432029304603295908 [33m404 [0m0.267 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_234413985406405662180612 [33m404 [0m0.319 ms - 69[0m
+[0mGET http://www.sogou.com/?rands=_1658021969362712842633728 [33m404 [0m0.873 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_2914290516027913024178224 [33m404 [0m0.252 ms - 70[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.143 ms - 46[0m
+[0mGET http://www.haosou.com/?rands=_350469276809116647928780 [33m404 [0m1.254 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_123131175402530440351832 [33m404 [0m0.336 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_100813261612652505437936 [33m404 [0m0.532 ms - 69[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.887 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.692 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_2048415623449295112244320 [33m404 [0m0.574 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_28820159645219841134840172 [33m404 [0m0.601 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_1197014727908678886257784 [33m404 [0m0.419 ms - 66[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.182 ms - 46[0m
+[0mGET http://www.haosou.com/?rands=_80157374121768104125584 [33m404 [0m0.661 ms - 65[0m
+[0mGET http://www.baidu.com/?rands=_1326414035981825951892992 [33m404 [0m0.344 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_250027504641840801293800 [33m404 [0m0.400 ms - 65[0m
+[0mGET http://www.kuaidaili.com/?rands=_130685408263198288377464 [33m404 [0m0.370 ms - 69[0m
+[0mGET / [33m404 [0m0.597 ms - 13[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.594 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.739 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_277654307529502021188480 [33m404 [0m1.118 ms - 65[0m
+[0mGET http://www.sogou.com/?rands=_1428914474723312003646656 [33m404 [0m0.508 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_318607537407407276499000 [33m404 [0m0.475 ms - 69[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.629 ms - 46[0m
+[0mGET http://www.google.com/reader/about/ [33m404 [0m0.949 ms - 47[0m
+[0mGET http://www.haosou.com/?rands=_318606957607217346369020 [33m404 [0m0.627 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_116163489202155368260320 [33m404 [0m0.522 ms - 69[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.642 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.632 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_1948023564884346100768820 [33m404 [0m0.575 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_2736135973614068742517008 [33m404 [0m0.484 ms - 66[0m
+[0mGET http://m.haosou.com/?rands=_19901124836430295912532 [33m404 [0m0.375 ms - 63[0m
+[0mGET http://www.1dvj.com/?rands=_188068006432830206497160 [33m404 [0m0.335 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_561418187689009006343888 [33m404 [0m0.246 ms - 69[0m
+[0mGET http://www.baidu.com/?rands=_3464115231216896604394016 [33m404 [0m0.923 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_17728285607906564309020 [33m404 [0m0.698 ms - 68[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.752 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.350 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.016 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.654 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_29619159972824486933346512 [33m404 [0m1.024 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_29619184584025742673282156 [33m404 [0m0.424 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_25605189713210655372503280 [33m404 [0m0.616 ms - 71[0m
+[0mGET /manager/html [33m404 [0m0.869 ms - 25[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m10.821 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m13.410 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m16.187 ms - -[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.805 ms - 46[0m
+[0mGET http://t6.proxy-checks.com/favicon.ico [33m404 [0m1.072 ms - 50[0m
+[0mPOST http://t6.proxy-checks.com/favicon.ico [33m404 [0m0.246 ms - 51[0m
+[0mGET http://205.204.73.8/favicon.ico [33m404 [0m0.248 ms - 43[0m
+[0mPOST http://t5.proxy-checks.com/favicon.ico [33m404 [0m0.227 ms - 51[0m
+[0mGET http://t3.proxy-checks.com/favicon.ico [33m404 [0m0.635 ms - 50[0m
+[0mPOST http://t3.proxy-checks.com/favicon.ico [33m404 [0m0.245 ms - 51[0m
+[0mGET http://37.235.55.20/favicon.ico [33m404 [0m0.250 ms - 43[0m
+[0mPOST http://t3.proxy-checks.com/favicon.ico [33m404 [0m0.365 ms - 51[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.607 ms - 46[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m11.584 ms - 134[0m
+[0mGET /favicon.ico [33m404 [0m0.402 ms - 24[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m7.147 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m4.227 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m5.162 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m13.080 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m13.640 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.936 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.782 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m5.224 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m12.562 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m12.415 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.760 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m3.505 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m17.058 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m1.752 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m16.558 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m4.449 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m1.980 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m26.588 ms - -[0m
+[0mGET /api/trabajadores/get [36m304 [0m35.632 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m15.437 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.205 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.693 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m5.009 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m12.981 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m14.486 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m3.561 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.637 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m19.183 ms - -[0m
+[0mGET /api/trabajadores/getParams [36m304 [0m17.325 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m16.275 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m4.979 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.384 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m17.574 ms - -[0m
+[0mGET /api/trabajadores/getParams [36m304 [0m15.417 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m19.927 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m3.383 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m3.015 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m4.610 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m12.649 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m20.387 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m4.532 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m1.984 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m4.861 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m13.985 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m1.928 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m3.244 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m4.768 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m14.315 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m12.164 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m1.951 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.739 ms - -[0m
+[0mGET http://httpheader.net/ [33m404 [0m0.753 ms - 34[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.587 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_183682797210831083042728 [33m404 [0m0.585 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_14454111890012664083698200 [33m404 [0m0.411 ms - 68[0m
+[0mGET http://www.sogou.com/?rands=_40811666818359463357216 [33m404 [0m0.269 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_17728271327361284076100 [33m404 [0m0.370 ms - 68[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m5.263 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m16.258 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m42.521 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m4.769 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.787 ms - -[0m
+algo ha pasado
+nombre_apellidos_dni_direccion_correo electrónico_telefono1_telefono2_NIF
+[0mPOST /api/trabajadores/setParams [32m200 [0m11.573 ms - 32[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m3.988 ms - 132[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m7.997 ms - -[0m
+[0mGET /api/trabajadores/get [36m304 [0m33.774 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m16.400 ms - -[0m
+algo ha pasado
+nombre__apellidos__dni__direccion__correo electrónico__telefono1__telefono2
+[0mPOST /api/trabajadores/setParams [32m200 [0m8.260 ms - 32[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m4.631 ms - 134[0m
+[0mGET /api/trabajadores/get [36m304 [0m23.335 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m22.747 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m7.910 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.488 ms - -[0m
+algo ha pasado
+nombre_apellidos_dni_direccion_correo electrónico_telefono1_telefono2_NIF
+[0mPOST /api/trabajadores/setParams [32m200 [0m8.290 ms - 32[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m3.030 ms - 132[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m7.706 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m17.752 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m17.086 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m23.047 ms - -[0m
+[0mGET /api/trabajadores/getParams [36m304 [0m21.120 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m19.977 ms - -[0m
+algo ha pasado
+nombre__apellidos__dni__direccion__correo electrónico__telefono1__telefono2
+[0mPOST /api/trabajadores/setParams [32m200 [0m7.008 ms - 32[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m4.373 ms - 134[0m
+[0mGET /api/trabajadores/get [32m200 [0m17.975 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m16.324 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m21.882 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.632 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m6.901 ms - -[0m
+[0mGET /api/trabajadores/get [36m304 [0m44.598 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m14.557 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m4.119 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m3.011 ms - -[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m6.313 ms - -[0m
+[0mGET /api/trabajadores/get [36m304 [0m14.232 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m15.823 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m3.326 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m3.175 ms - -[0m
+algo ha pasado
+nombresss_apellidos_dni_direccion_correo electrónico_telefono1_telefono2
+[0mPOST /api/trabajadores/setParams [32m200 [0m6.171 ms - 32[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m3.220 ms - 131[0m
+algo ha pasado
+nombre__apellidos__dni__direccion__correo electrónico__telefono1__telefono2
+[0mPOST /api/trabajadores/setParams [32m200 [0m8.244 ms - 32[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m11.269 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m12.185 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m12.475 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m3.026 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.640 ms - -[0m
+algo ha pasado
+nombres__apellidos__dni__direccion__correo electrónico__telefono1__telefono2
+[0mPOST /api/trabajadores/setParams [32m200 [0m6.180 ms - 32[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m2.353 ms - 135[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m6.308 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m12.520 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m15.382 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m8.198 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.330 ms - -[0m
+algo ha pasado
+nombresss__apellidos__dni__direccion__correo electrónico__telefono1__telefono2
+[0mPOST /api/trabajadores/setParams [32m200 [0m5.102 ms - 32[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m2.490 ms - 137[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m7.075 ms - -[0m
+[0mGET /api/trabajadores/get [36m304 [0m16.836 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m17.014 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m3.319 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.662 ms - -[0m
+algo ha pasado
+nombre__apellidos__dni__direccion__correo electrónico__telefono1__telefono2
+[0mPOST /api/trabajadores/setParams [32m200 [0m12.502 ms - 32[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m2.382 ms - 134[0m
+algo ha pasado
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.810 ms - -[0m
+[0mGET /api/trabajadores/get [36m304 [0m12.956 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m22.941 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m5.165 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.848 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m1.979 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m4.845 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m3.557 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m1.973 ms - -[0m
+[0mGET http://www.baidu.com/?rands=_194466927361518661060916 [33m404 [0m1.601 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_835239836019297951606848 [33m404 [0m0.434 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_183684040415413464116632 [33m404 [0m0.392 ms - 65[0m
+[0mGET http://www.sogou.com/?rands=_33960126375231772166579208 [33m404 [0m0.459 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_835253692025363021908132 [33m404 [0m0.292 ms - 69[0m
+[0mGET http://www.baidu.com/?rands=_193768551521653939701120 [33m404 [0m0.859 ms - 65[0m
+[0mGET http://www.sogou.com/?rands=_21832109094441870011479816 [33m404 [0m0.483 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_103057374121768104138944 [33m404 [0m0.475 ms - 69[0m
+[0mGET /Diagnostics.asp [33m404 [0m0.656 ms - 28[0m
+[0mPOST http://check.best-proxies.ru/azenv.php?auth=145076664651869&a=PC&i=2160541200&p=8080 [33m404 [0m0.494 ms - 109[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.649 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_286746957606457625589140 [33m404 [0m0.598 ms - 65[0m
+[0mGET http://www.haosou.com/?rands=_193491828403748800548444 [33m404 [0m0.276 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_3374997560248956828533800 [33m404 [0m0.695 ms - 66[0m
+[0mGET http://www.kuaidaili.com/?rands=_1698076727819668484220624 [33m404 [0m0.316 ms - 70[0m
+[0mGET http://www.baidu.com/?rands=_75784744204293003654876 [33m404 [0m0.580 ms - 64[0m
+[0mGET http://www.sogou.com/?rands=_28008163254040856282472656 [33m404 [0m0.232 ms - 67[0m
+[0mGET http://m.haosou.com/?rands=_19901129636430295796600 [33m404 [0m0.631 ms - 63[0m
+[0mGET http://www.1dvj.com/?rands=_6962042002516208517088 [33m404 [0m0.268 ms - 62[0m
+[0mGET http://www.kuaidaili.com/?rands=_537349169430016355018068 [33m404 [0m0.225 ms - 69[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.644 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.770 ms - 46[0m
+[0mGET /manager/html [33m404 [0m0.842 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.659 ms - 25[0m
+[0mGET http://www.baidu.com/?rands=_1695412152162327766941504 [33m404 [0m0.874 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_552313796861622286906600 [33m404 [0m0.811 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_24740196083216660987215812 [33m404 [0m0.312 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_420597238418684003137904 [33m404 [0m0.485 ms - 69[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.719 ms - 46[0m
+[0mGET http://www.google.com/reader/about/ [33m404 [0m0.620 ms - 47[0m
+[0mGET http://www.baidu.com/?rands=_1446441664592158729004 [33m404 [0m0.920 ms - 63[0m
+[0mGET http://www.haosou.com/?rands=_1765880113632613244469248 [33m404 [0m0.519 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_69442735233780723579552 [33m404 [0m0.246 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_25470121861830259206455072 [33m404 [0m0.304 ms - 71[0m
+[0mGET HTTP://51.254.206.142/httptest.php [33m404 [0m0.722 ms - 46[0m
+[0mGET /manager/html [33m404 [0m3.024 ms - 25[0m
+[0mGET http://www.baidu.com/?rands=_867912206256641955328047035736 [33m404 [0m0.709 ms - 71[0m
+[0mGET http://www.haosou.com/?rands=_1856874725224159722185948 [33m404 [0m0.545 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_1823817087282243312222208 [33m404 [0m0.561 ms - 70[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.672 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.756 ms - 46[0m
+[0mGET http://www.baidu.com/?rands=_876863821080849124568 [33m404 [0m0.608 ms - 62[0m
+[0mGET http://www.haosou.com/?rands=_341124506617912945101044 [33m404 [0m0.243 ms - 66[0m
+[0mGET http://www.sogou.com/?rands=_11250188790041889694155320 [33m404 [0m0.305 ms - 67[0m
+[0mGET http://www.kuaidaili.com/?rands=_5340144419635033344563512 [33m404 [0m0.308 ms - 70[0m
+[0mGET http://www.baidu.com/?rands=_2088812434410034701997160 [33m404 [0m0.652 ms - 66[0m
+[0mGET http://www.haosou.com/?rands=_1339160912015865922723140 [33m404 [0m0.233 ms - 67[0m
+[0mGET http://www.sogou.com/?rands=_15963072607378563234244 [33m404 [0m0.273 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_17728285607633924309020 [33m404 [0m0.386 ms - 68[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m1.026 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.975 ms - 46[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m5.131 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m4.024 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.654 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m4.005 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m4.643 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m16.713 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m20.970 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m4.800 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m3.145 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m3.262 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m3.104 ms - -[0m
+algo ha pasado
+nombre__apellidos__dni__direccion__correo electrónico__telefono1__telefono2__test
+[0mPOST /api/trabajadores/setParams [32m200 [0m6.741 ms - 32[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m2.880 ms - 140[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.891 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m17.177 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m30.308 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m8.652 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m4.489 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m3.092 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.924 ms - -[0m
+algo ha pasado
+nombre__apellidos__dni__direccion__correo electrónico__telefono1__telefono2
+[0mPOST /api/trabajadores/setParams [32m200 [0m7.203 ms - 32[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m4.048 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [32m200 [0m4.981 ms - 134[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.318 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.458 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.597 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m3.918 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [32m200 [0m13.086 ms - 1785[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m12.487 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m15.419 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m15.571 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m12.715 ms - -[0m
+[0mGET /manager/html [33m404 [0m1.024 ms - 25[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.986 ms - 46[0m
+[0mGET http://51.254.206.142/httptest.php [33m404 [0m0.693 ms - 46[0m
+[0mGET /manager/html [33m404 [0m0.659 ms - 25[0m
+[0mGET /lang/en/js/feature.js [33m404 [0m0.846 ms - 34[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m23.057 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/getParams [36m304 [0m2.938 ms - -[0m
+algo ha pasado
+[0mGET /api/trabajadores/get [36m304 [0m13.354 ms - -[0m
+[0mGET http://www.baidu.com/?rands=_267635797231242005692600 [33m404 [0m0.797 ms - 65[0m
+[0mGET http://www.sogou.com/?rands=_1671055790011260201976880 [33m404 [0m0.555 ms - 66[0m
+[0mGET http://m.haosou.com/?rands=_178324200960927556223491552 [33m404 [0m0.375 ms - 67[0m
+[0mGET http://www.1dvj.com/?rands=_227443648831357911940996 [33m404 [0m0.291 ms - 64[0m
+[0mGET http://www.kuaidaili.com/?rands=_144693800018527044118816 [33m404 [0m0.293 ms - 69[0m
