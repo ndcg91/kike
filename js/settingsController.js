@@ -48,6 +48,9 @@
         //RETRIEVE HTTP RETRIEVE TEMPORALLY COMMENTED OUT
         this.getParams = function(){
             console.log("getParamenters");
+			if ($localStorage.WorkerParams == undefined){
+				$localStorage.WorkerParams = [];
+			}
             console.log($localStorage.WorkerParams);
             $localStorage.WorkerParams.forEach(function(element){
                element.editing = false;
