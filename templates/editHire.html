@@ -33,10 +33,15 @@
                     </div>
                     <div id="editing" ng-show="settings.hire.editing">
                         <div ng-repeat="section in settings.hire.sections">
-                            <div ng-repeat="variable in section.variables">
+                            <!--div ng-repeat="variable in section.variables">
                                 <textarea  value="{{variable.text}}" ng-model="variable.text" id="{{variable.variable}}_editElement" class="materialize-textarea"></textarea>
                                 <label for="{{variable.variable}}_editElement">{{variable.variable}}</label>
-                            </div>
+                            </div-->
+							<p ng-repeat="section in settings.hire.sections">
+                            <strong ng-repeat="variable in section.variables" ng-click="settings.removeHireVariable(variable.variable)" editable-text="{{variable.text}}">
+                                {{variable.text}} <strong class="grey red-text">{{variable.variable}}</strong>
+                            </strong>
+                        </p>
                         </div>
                     </div>
                 </div>
