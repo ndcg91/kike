@@ -1,29 +1,21 @@
-'use strict';
-
 // Load modules
 
 
 // Declare internals
 
-const internals = {};
-
-
-internals.hexTable = function () {
-
-    const array = new Array(256);
-    for (let i = 0; i < 256; ++i) {
-        array[i] = '%' + ((i < 16 ? '0' : '') + i.toString(16)).toUpperCase();
-    }
-
-    return array;
-}();
+var internals = {};
+internals.hexTable = new Array(256);
+for (var h = 0; h < 256; ++h) {
+    internals.hexTable[h] = '%' + ((h < 16 ? '0' : '') + h.toString(16)).toUpperCase();
+}
 
 
 exports.arrayToObject = function (source, options) {
 
-    const obj = options.plainObjects ? Object.create(null) : {};
-    for (let i = 0; i < source.length; ++i) {
+    var obj = options.plainObjects ? Object.create(null) : {};
+    for (var i = 0, il = source.length; i < il; ++i) {
         if (typeof source[i] !== 'undefined') {
+
             obj[i] = source[i];
         }
     }
@@ -63,10 +55,10 @@ exports.merge = function (target, source, options) {
         target = exports.arrayToObject(target, options);
     }
 
-    const keys = Object.keys(source);
-    for (let i = 0; i < keys.length; ++i) {
-        const key = keys[i];
-        const value = source[key];
+    var keys = Object.keys(source);
+    for (var k = 0, kl = keys.length; k < kl; ++k) {
+        var key = keys[k];
+        var value = source[key];
 
         if (!Object.prototype.hasOwnProperty.call(target, key)) {
             target[key] = value;
@@ -84,8 +76,7 @@ exports.decode = function (str) {
 
     try {
         return decodeURIComponent(str.replace(/\+/g, ' '));
-    }
-    catch (e) {
+    } catch (e) {
         return str;
     }
 };
@@ -102,9 +93,9 @@ exports.encode = function (str) {
         str = '' + str;
     }
 
-    let out = '';
-    for (let i = 0; i < str.length; ++i) {
-        let c = str.charCodeAt(i);
+    var out = '';
+    for (var i = 0, il = str.length; i < il; ++i) {
+        var c = str.charCodeAt(i);
 
         if (c === 0x2D || // -
             c === 0x2E || // .
@@ -114,28 +105,28 @@ exports.encode = function (str) {
             (c >= 0x41 && c <= 0x5A) || // a-z
             (c >= 0x61 && c <= 0x7A)) { // A-Z
 
-            out = out + str[i];
+            out += str[i];
             continue;
         }
 
         if (c < 0x80) {
-            out = out + internals.hexTable[c];
+            out += internals.hexTable[c];
             continue;
         }
 
         if (c < 0x800) {
-            out = out + (internals.hexTable[0xC0 | (c >> 6)] + internals.hexTable[0x80 | (c & 0x3F)]);
+            out += internals.hexTable[0xC0 | (c >> 6)] + internals.hexTable[0x80 | (c & 0x3F)];
             continue;
         }
 
         if (c < 0xD800 || c >= 0xE000) {
-            out = out + (internals.hexTable[0xE0 | (c >> 12)] + internals.hexTable[0x80 | ((c >> 6) & 0x3F)] + internals.hexTable[0x80 | (c & 0x3F)]);
+            out += internals.hexTable[0xE0 | (c >> 12)] + internals.hexTable[0x80 | ((c >> 6) & 0x3F)] + internals.hexTable[0x80 | (c & 0x3F)];
             continue;
         }
 
         ++i;
         c = 0x10000 + (((c & 0x3FF) << 10) | (str.charCodeAt(i) & 0x3FF));
-        out = out + (internals.hexTable[0xF0 | (c >> 18)] + internals.hexTable[0x80 | ((c >> 12) & 0x3F)] + internals.hexTable[0x80 | ((c >> 6) & 0x3F)] + internals.hexTable[0x80 | (c & 0x3F)]);
+        out += internals.hexTable[0xF0 | (c >> 18)] + internals.hexTable[0x80 | ((c >> 12) & 0x3F)] + internals.hexTable[0x80 | ((c >> 6) & 0x3F)] + internals.hexTable[0x80 | (c & 0x3F)];
     }
 
     return out;
@@ -150,7 +141,7 @@ exports.compact = function (obj, refs) {
     }
 
     refs = refs || [];
-    const lookup = refs.indexOf(obj);
+    var lookup = refs.indexOf(obj);
     if (lookup !== -1) {
         return refs[lookup];
     }
@@ -158,9 +149,9 @@ exports.compact = function (obj, refs) {
     refs.push(obj);
 
     if (Array.isArray(obj)) {
-        const compacted = [];
+        var compacted = [];
 
-        for (let i = 0; i < obj.length; ++i) {
+        for (var i = 0, il = obj.length; i < il; ++i) {
             if (typeof obj[i] !== 'undefined') {
                 compacted.push(obj[i]);
             }
@@ -169,9 +160,9 @@ exports.compact = function (obj, refs) {
         return compacted;
     }
 
-    const keys = Object.keys(obj);
-    for (let i = 0; i < keys.length; ++i) {
-        const key = keys[i];
+    var keys = Object.keys(obj);
+    for (i = 0, il = keys.length; i < il; ++i) {
+        var key = keys[i];
         obj[key] = exports.compact(obj[key], refs);
     }
 
