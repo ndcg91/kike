@@ -38,8 +38,10 @@
                                 <label for="{{variable.variable}}_editElement">{{variable.variable}}</label>
                             </div-->
 							<p ng-repeat="section in settings.hire.sections">
-                            <strong ng-repeat="variable in section.variables" editable-text="variable.text">
+							<div ng-repeat="variable in section.variables" >
+                            <strong editable-text="variable.text">
                                 {{variable.text || "vacio"}} </strong><strong class="grey red-text">{{variable.variable}}</strong>
+							</div>
                             
                         </p>
                         </div>
