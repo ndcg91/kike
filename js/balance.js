@@ -1,6 +1,9 @@
 (function(){
     var app = angular.module("Balance",['ngCsvImport','ngStorage','xeditable']);
-
+	
+	app.run(function(editableOptions) {
+		editableOptions.theme = 'default'; // bootstrap3 theme. Can be also 'bs2', 'default'
+	});
     //Added for CORS Support
     app.config(['$httpProvider',function($httpProvider){
         $httpProvider.defaults.useXDomain = true;
