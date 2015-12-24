@@ -1,5 +1,5 @@
 (function(){
-    var app = angular.module("Balance",['ngCsvImport','ngStorage']);
+    var app = angular.module("Balance",['ngCsvImport','ngStorage','xeditable']);
 
     //Added for CORS Support
     app.config(['$httpProvider',function($httpProvider){
