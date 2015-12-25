@@ -75,6 +75,9 @@
                     {{val.value}}
                 </th>
                 <th>
+                    Identificador
+                </th>
+                <th>
                     Editar
                 </th>
                 <th>
@@ -94,6 +97,15 @@
                 </div>
             </td>
             <td>
+                <div class="container"  ng-show="!data.editingWorker">
+                    {{data.uniqueValue}}
+                </div>
+                <div class="input-field col s4" ng-show="data.editingWorker">
+                    <input value="{{data.uniqueValue}}" id="{{data.uniqueValue}}_id" type="text" class="validate" ng-model="data.uniqueValue" novalidate formnovalidate required>
+                    <label class="active" for="{{data.uniqueValue}}_id">{{data.uniqueValue}}</label>
+                </div>
+            </td>
+            <td>
                 <p>
                     <input type="checkbox" id="{{data}}_id" ng-click="trabajadores.toggleEditing(data)" onclick=" $('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
@@ -110,6 +122,10 @@
             <td ng-repeat="v in trabajadores.values">
                 <input id="adding_worker" type="{{v.type == 'date' && 'text' || v.type}}" class="validate" ng-class="{datepicker: v.type == 'date'}" ng-model="trabajadores.newWorker[v.value]"  novalidate formnovalidate>
                 <label class="active" for="adding_worker">{{v}}</label>
+            </td>
+            <td>
+                <input value="{{data.uniqueValue}}" id="{{data.uniqueValue}}_id" type="text" class="validate" ng-model="data.uniqueValue" novalidate formnovalidate required>
+                <label class="active" for="{{data.uniqueValue}}_id">{{data.uniqueValue}}</label>
             </td>
         </tr>
         </tbody>

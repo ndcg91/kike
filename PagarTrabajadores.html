@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Balance">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Starter Template - Materialize</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.min.js"></script>
+    <script src="bower_components/Materialize/bin/materialize.js"></script>
+    <link href="bower_components/angular-xeditable/dist/css/xeditable.css" rel="stylesheet">
+    <script src="bower_components/angular-xeditable/dist/js/xeditable.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/balance.js"></script>
+    <script src="js/pagoController.js"></script>
+    <script src="bower_components/angular-csv-import-tmp/dist/angular-csv-import.js"></script>
+</head>
+<body ng-controller="PagoController as pago">
+
+<nav class="black lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Balance</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="Trabajadores.html">Trabajadores</a></li>
+            <li><a href="Contratacion.html">Contratación</a></li>
+            <li><a href="Pago.html">Pago</a></li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="Settings.html">Configuracion</a></li>
+        </ul>
+        <ul id="config" class="dropdown-content">
+            <li><a href="#!">Contrato De Trabajo</a></li>
+            <li ng-click="settings.name=true;settings.selected=true"><a href="#!">Datos de Trabajadores</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">Calculo y nominas</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="Trabajadores.html">Trabajadores</a></li>
+            <li><a href="Contratacion.html">Contratación</a></li>
+            <li><a href="PagarTrabajadores.html">Pago</a></li>
+            <li><a href="Settings.html">Configuracion</a></li>
+        </ul>
+
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+<!--<ng-csv-import content="trabajadores.csv.content"
+               header="trabajadores.csv.header"
+               separator="trabajadores.separator"
+               result="trabajadores.csv.result"
+               encoding="trabajadores.encoding"
+               accept="csv.accept"></ng-csv-import>
+{{trabajadores.csv}}
+{{trabajadores.separator}}-->
+<div class="container" style="padding-top: 20px;padding-bottom: 20px">
+    <div class="row">
+        <div class="input-field col s6">
+            <input value="Busqueda" id="busqueda"  ng-model="workerFilter" type="text" class="validate">
+            <label class="active" for="busqueda" >Busqueda</label>
+
+        </div>
+    </div>
+    <h3 class="center-align" style="padding-top: 20px;padding-bottom: 20px">Datos de los trabajadores</h3>
+    <table class="responsive-table">
+        <thead>
+        <tr >
+            <th ng-repeat="val in pago.valuesToShow">
+                {{val.value}}
+            </th>
+            <th>
+                Añadir o Editar Nomina
+            </th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="actualWorker in pago.worker | filter:workerFilter:strict track by $index">
+            <td ng-repeat="value in pago.valuesToShow">
+                <div class="container">
+                    {{actualWorker[value.value]}}
+                </div>
+            </td>
+            <td>
+                <button class="btn" ng-click="pago.selectWorker(actualWorker)" onclick="$('#addNomina').openModal()">Nomina</button>
+            </td>
+            <td>
+
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+<edit-nomina-values></edit-nomina-values>
+
+<footer class="page-footer black white-text">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Company Bio</h5>
+                <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Settings</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Link 1</a></li>
+                    <li><a class="white-text" href="#!">Link 2</a></li>
+                    <li><a class="white-text" href="#!">Link 3</a></li>
+                    <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Connect</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Link 1</a></li>
+                    <li><a class="white-text" href="#!">Link 2</a></li>
+                    <li><a class="white-text" href="#!">Link 3</a></li>
+                    <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Made by <a class="orange-text text-lighten-3" href="http://developersashole.com">DevelopersAshole</a>
+        </div>
+    </div>
+</footer>
+
+
+<!--  Scripts-->
+<script>
+    function test(){
+        $(document).ready(function() {
+            console.log(test);
+            $('select').material_select();
+        });
+    }
+    window.onload = test;
+</script>
+
+
+
+
+
+</body>
+</html>

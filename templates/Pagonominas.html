@@ -1,0 +1,154 @@
+<div id="addNomina" class="modal small">
+    <div class="modal-content">
+    <div class="container">
+        <div class="row">
+            <h3 class="center-align">{{pago.nominaClicked && "Editando "+ pago.selectedNomina.name || "Configuracion de Nóminas"}}</h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s3">
+            <div class="row">
+                <h4>Tipos de Nominas</h4>
+            </div>
+                <table>
+                    <thead>
+                        <th>Tipos de Nóminas</th>
+                        <th>Borrar</th>
+                        <th>Editar</th>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="nomina in pago.selectedWorker.nomina" >
+                            <td>
+                                <div ng-show="!nomina.editing" ng-click="pago.selectedNomina=nomina;pago.nominaClicked=true;">
+                                    {{nomina.name}}
+                                </div>
+                                <div ng-show="nomina.editing">
+                                    <input type="text" placeholder="{{nomina.name}}" id="{{nomina.name}}_edit" ng-model="pago.editedNomina">
+                                    <label for="{{nomina.name}}_edit">nombre</label>
+                                </div>
+                            </td>
+                            <td><i class="material-icons center black-text" ng-click="pago.removeNomina(nomina)" style="cursor: pointer;">delete</i></td>
+                            <td>
+                                <div>
+                                    <input type="checkbox" id="{{nomina}}_edit" ng-click="pago.editNomina(nomina)">
+                                    <label for="{{nomina}}_edit">Editar</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr  ng-show="pago.addingNomina">
+                            <td>
+                                <input placeholder="nueva nomina" id="newNomina" type="text" ng-model="pago.newNomina">
+                                <label for="newNomina">nómina</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            <div class="row">
+                <button class="btn small green white-text" ng-click="pago.addingNomina=true" ng-show="!pago.addingNomina">Añadir</button>
+                <button class="btn small green white-text" ng-click="pago.addNomina(pago.newNomina)"  ng-show="pago.addingNomina">Confirmar</button>
+            </div>
+        </div>
+
+            <div class="col s9" ng-show="pago.nominaClicked">
+            <div class="row">
+                <div class="col s6">
+                    <div class="row"><h4>Formas de Pago</h4></div>
+                <table>
+                    <thead>
+                        <th>Formas de Pago</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Editar</th>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="data in pago.selectedNomina.payments">
+                            <td ng-show="!data.editing">{{data.type}}</td>
+                            <td ng-show="data.editing"><input type="text" placeholder="Tipo" value="{{data.type}}" ng-model="data.type"></td>
+                            <td ng-show="!data.editing"> {{data.price | currency}}</td>
+                            <td ng-show="data.editing"> <input type="number" placeholder="Precio" value="{{data.price}}" ng-model="data.price"></td>
+                            <td ng-show="!data.editing">{{data.quantity}}</td>
+                            <td ng-show="data.editing"><input type="number" placeholder="Cantidad" value="{{data.quantity}}" ng-model="data.quantity"></td>
+                            <td>
+                                <div>
+                                <input type="checkbox"  id="{{data.type}}_edit"  ng-click="data.editing=!data.editing">
+                                <label for="{{data.type}}_edit">Editar</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr ng-show="pago.addingPayment">
+                            <td>
+                                <input placeholder="value" id="{{selectedNomina.name}}_newPaymentType" type="text" ng-model="pay.type">
+                                <label for="{{selectedNomina.name}}_newPaymentType">Tipo</label>
+                            </td>
+                            <td>
+                                <input placeholder="value" id="{{selectedNomina.name}}_newPaymentPrice" type="number" ng-model="pay.price">
+                                <label for="{{selectedNomina.name}}_newPaymentPrice">Precio</label>
+                            </td>
+                            <td>
+                                <input placeholder="value" id="{{selectedNomina.name}}_newPaymentQuantity" type="number" ng-model="pay.quantity">
+                                <label for="{{selectedNomina.name}}_newPaymentQuantity">Cantidad</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                    <button class="btn green right" ng-click="pago.addingPayment=true;" ng-show="!pago.addingPayment">Añadir</button>
+                    <button class="btn green right" ng-click="pago.addingPayment=false;pago.addPayment({type:pay.type, price:pay.price,quantity:pay.quantity,editing:false})" ng-show="pago.addingPayment">Completar</button>
+
+
+
+                </div>
+                <div class="col s6">
+                    <div class="row">
+                        <h4>Descuentos</h4>
+                    </div>
+                    <table>
+                        <thead>
+                            <th>Descuentos, concepto</th>
+                            <th>Valor</th>
+                            <th>Porciento</th>
+                            <th>Editar</th>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="data in pago.selectedNomina.discounts">
+                            <td ng-show="!data.editing">{{data.type}}</td>
+                            <td  ng-show="data.editing"><input type="text" placeholder="Tipo"  ng-model="data.type"> </td>
+                            <td ng-show="!data.editing">{{data.price | currency}}</td>
+                            <td  ng-show="data.editing"><input type="number" placeholder="Precio"  ng-model="data.price"> </td>
+                            <td ng-show="!data.editing">{{data.percent}}{{data.percent && "%"}}</td>
+                            <td  ng-show="data.editing" ><input type="number" max="100" ng-model="data.percent"></td>
+                            <td>
+                                <div>
+                                    <input type="checkbox"  id="{{data.type}}_edit"  ng-click="data.editing=!data.editing">
+                                    <label for="{{data.type}}_edit">Editar</label>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr ng-show="pago.addingDiscount">
+                            <td>
+                                <input placeholder="value" id="{{selectedNomina.name}}_newDiscount" type="text" ng-model="dis.type">
+                                <label for="{{selectedNomina.name}}_newDiscount">Concepto</label>
+                            </td>
+                            <td>
+                                <input placeholder="value" id="{{selectedNomina.name}}_newDiscountPrice" type="number" ng-model="dis.price">
+                                <label for="{{selectedNomina.name}}_newDiscountPrice">Precio</label>
+                            </td>
+                            <td>
+                                <input placeholder="value" id="{{selectedNomina.name}}_newDiscountPercent" type="number" ng-model="dis.percent">
+                                <label for="{{selectedNomina.name}}_newDiscountPercent">Porciento</label>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <button class="btn green" ng-click="pago.addingDiscount=true;" ng-show="!pago.addingDiscount">Añadir</button>
+                    <button class="btn green" ng-click="pago.addingDiscount=false;pago.addDiscount({type:dis.type,price:dis.price,percent:dis.percent,editing:false})" ng-show="pago.addingDiscount">Completar</button>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
