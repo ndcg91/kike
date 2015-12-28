@@ -1,13 +1,10 @@
-<div id="addNomina" class="modal small">
-    <div class="modal-content">
-    <div class="container">
+
         <div class="row">
-            <h3 class="center-align">{{pago.nominaClicked && "Editando "+ pago.selectedNomina.name || "Configuracion de Nóminas"}}</h3>
+            <button class="btn green right" ng-click="pago.editingWorker=false;">Guardar</button>
+            <h5 class="center-align">{{pago.nominaClicked && "Editando "+ pago.selectedNomina.name || "Configuracion de Nóminas"}}</h5>
         </div>
-    </div>
-    <div class="container">
         <div class="row">
-            <div class="col s3">
+            <div class="col s6 m6 l3">
             <div class="row">
                 <h4>Tipos de Nominas</h4>
             </div>
@@ -51,9 +48,9 @@
             </div>
         </div>
 
-            <div class="col s9" ng-show="pago.nominaClicked">
+            <div class="col s6 m6 l9" ng-show="pago.nominaClicked">
             <div class="row">
-                <div class="col s6">
+                <div class="col l6 s12 m12">
                     <div class="row"><h4>Formas de Pago</h4></div>
                 <table>
                     <thead>
@@ -66,7 +63,7 @@
                         <tr ng-repeat="data in pago.selectedNomina.payments">
                             <td ng-show="!data.editing">{{data.type}}</td>
                             <td ng-show="data.editing"><input type="text" placeholder="Tipo" value="{{data.type}}" ng-model="data.type"></td>
-                            <td ng-show="!data.editing"> {{data.price | currency}}</td>
+                            <td ng-show="!data.editing"> {{data.price | currency:'€'}}</td>
                             <td ng-show="data.editing"> <input type="number" placeholder="Precio" value="{{data.price}}" ng-model="data.price"></td>
                             <td ng-show="!data.editing">{{data.quantity}}</td>
                             <td ng-show="data.editing"><input type="number" placeholder="Cantidad" value="{{data.quantity}}" ng-model="data.quantity"></td>
@@ -99,7 +96,7 @@
 
 
                 </div>
-                <div class="col s6">
+                <div class="col l6 s12 m12">
                     <div class="row">
                         <h4>Descuentos</h4>
                     </div>
@@ -114,7 +111,7 @@
                         <tr ng-repeat="data in pago.selectedNomina.discounts">
                             <td ng-show="!data.editing">{{data.type}}</td>
                             <td  ng-show="data.editing"><input type="text" placeholder="Tipo"  ng-model="data.type"> </td>
-                            <td ng-show="!data.editing">{{data.price | currency}}</td>
+                            <td ng-show="!data.editing">{{data.price | currency:'€'}}</td>
                             <td  ng-show="data.editing"><input type="number" placeholder="Precio"  ng-model="data.price"> </td>
                             <td ng-show="!data.editing">{{data.percent}}{{data.percent && "%"}}</td>
                             <td  ng-show="data.editing" ><input type="number" max="100" ng-model="data.percent"></td>
@@ -142,13 +139,13 @@
                         </tr>
                         </tbody>
                     </table>
-                    <button class="btn green" ng-click="pago.addingDiscount=true;" ng-show="!pago.addingDiscount">Añadir</button>
-                    <button class="btn green" ng-click="pago.addingDiscount=false;pago.addDiscount({type:dis.type,price:dis.price,percent:dis.percent,editing:false})" ng-show="pago.addingDiscount">Completar</button>
+                    <button class="btn green right" ng-click="pago.addingDiscount=true;" ng-show="!pago.addingDiscount">Añadir</button>
+                    <button class="btn green right" ng-click="pago.addingDiscount=false;pago.addDiscount({type:dis.type,price:dis.price,percent:dis.percent,editing:false})" ng-show="pago.addingDiscount">Completar</button>
 
                 </div>
             </div>
         </div>
         </div>
-    </div>
-</div>
-</div>
+        <div class="row">
+            <button class="btn green right">Pagar</button>
+        </div>

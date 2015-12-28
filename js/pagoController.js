@@ -8,14 +8,65 @@
         var self = this; //to access scope within callbacks
         this.separator = ";";
         this.encoding = "ISO-8859-1";
-       // this.values = [];
         this.worker = [];
         this.values = [];
         this.nominas = [];
+        this.valuesToShow = [];
 	    this.csvCheck = false;
+        this.editingWorker = false;
+        this.pendingPayments = [];
+
         this.selectedWorker = $localStorage.selectedWorker;
+
+        this.selectSection = function(section){
+            self.pageSections.forEach(function(sec){
+                if (sec != section){
+                    sec.active = false;
+                }
+                else{
+                    sec.active = true;
+                }
+                self.actualSection = section;
+                self.actualSection.active = true;
+            })
+
+        };
+
+        this.getPendingPayments = function(){
+            var pending = [];
+            self.worker.forEach(function(work){
+                if (work.nomina.length != 0 || work.nomina.length == 0 && work.payedNomina.length == 0 ){
+                    pending.push(work);
+                }
+            });
+            self.pendingPayments = pending;
+        };
+
+        this.pageSections = [
+            {
+                name:"Trabajadores",
+                active:true
+            },
+            {
+                name:"Pagos Pendientes",
+                active:false
+            },
+            {
+                name:"Pagos Realizados",
+                active:false
+            },
+            {
+                name:"Resumen del Mes",
+                active:false
+            }
+        ];
+        this.actualSection = this.pageSections[0];
         this.getParams = function(){
             self.values=$localStorage.WorkerParams;
+            this.values.forEach(function(element){
+                element.valueadded = false;
+            });
+            console.log(this.values);
         };
 
 
@@ -27,10 +78,14 @@
                 if (element.nomina == undefined ){
                     element.nomina = [];
                 }
+                if (element.payedNomina == undefined){
+                    element.payedNomina = [];
+                }
             });
         };
 
         this.selectWorker = function(worker){
+            self.editingWorker = true;
             self.selectedWorker = worker;
             $localStorage.selectedWorker = worker;
             console.log($localStorage.selectedWorker);
@@ -52,6 +107,31 @@
         };
 
 
+        this.toggleValue = function(value){
+            console.log(value.valueadded);
+            if (value.valueadded == undefined){
+                value.valueadded = false
+            }
+            if (!value.valueadded){
+                value.valueadded = true;
+                self.valuesToShow.push(value);
+            }
+            else{
+                value.valueadded = false;
+                newArray = [];
+                self.valuesToShow.forEach(function(element){
+                    if (element.value != value.value){
+                        newArray.push(element);
+                    }
+                });
+                self.valuesToShow = newArray;
+            }
+            self.values.forEach(function(val){
+                if (val.value == value.value){
+                    val = value;
+                }
+            })
+        };
 
 
 
