@@ -98,10 +98,14 @@
         };
         */
         this.getWorkers = function(){
+            if ($localStorage.workers == undefined){
+                $localStorage.workers = [];
+            }
             self.worker = $localStorage.workers;
         };
         this.addWorker = function(workerToAdd){
             $localStorage.workers.push(workerToAdd);
+            self.newWorker = [];
             self.getWorkers();
         };
         this.deleteWorker = function(workerToDelete){
@@ -129,7 +133,7 @@
             else {
                 worker.editingWorker = true;
             }
-        }
+        };
 
         var init = function () {
             self.getParams();

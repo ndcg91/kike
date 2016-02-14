@@ -74,6 +74,9 @@
         this.getWorkers = function(){
             console.log("getting workers");
             self.worker = $localStorage.workers;
+            if (self.worker == undefined){
+                self.worker = [];
+            }
             self.worker.forEach(function(element){
                 if (element.nomina == undefined ){
                     element.nomina = [];
