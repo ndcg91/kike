@@ -1,0 +1,58 @@
+<div class="section" ng-show="settings.name">
+    <div class="container">
+    <h4>Editar Datos de Trabajadores</h4>
+    </div>
+
+    <div class="container"  >
+        <div class="row" ng-repeat="name in settings.nameFields">
+            <div class="col s1 offset-s1">
+                <i class="large material-icons circle responsive-img center light-blue-text"></i>
+            </div>
+            <div class="col s2">
+                <div class="container" ng-show="!name.editing">
+                    <h5>{{name.value}}</h5>
+                </div>
+                <div class="container" ng-show="name.editing">
+                    <input placeholder="value" id="{{name.value}}_value" type="text" ng-model="name.value">
+                    <label for="{{name.value}}_value">Valor</label>
+                </div>
+            </div>
+            <div class="col s1">
+                <p>
+                    <input type="checkbox" id="{{name.value}}_checkBox" ng-click="settings.editName(name)" onclick="$('select').material_select();" ng-class="{selected: name.editing}" />
+                    <label for="{{name.value}}_checkBox">Edit</label>
+                </p>
+            </div>
+            <div class="input-field col s2" ng-show="name.editing">
+                <select ng-model="name.type" ng-options="type for type in settings.inputType" />
+                <label>Tipo</label>
+            </div>
+            <div class="col s1">
+                <i class="medium material-icons circle responsive-img center light-blue-text hoverable" ng-click="settings.deleteName(name)">delete</i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s1 offset-s1">
+                <a class="btn-floating btn-large waves-effect waves-light blue" onclick="$('#modal1').openModal(); $('select').material_select();"><i class="material-icons">add</i></a>
+            </div>
+        </div>
+
+</div>
+</div>
+<div id="modal1" class="modal small">
+    <div class="modal-content">
+        <h4>Añada un nuevo valor</h4>
+        <div class="input-field col s4">
+            <input id="valor" type="text" class="validate" ng-model="addValue">
+            <label class="active" for="valor">Valor</label>
+        </div>
+        <div class="input-field col s4">
+            <select ng-model="settings.selectedInput" ng-options="type for type in settings.inputType" />
+            <label>Tipo</label>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="waves-effect waves-green btn green left" ng-click="settings.addWorkerValue({value:addValue,type:settings.selectedInput})" onclick="Materialize.toast('Valor añadido', 2000)">Agregar</a>
+        <a href="#!" class="modal-action modal-close waves-green btn red right" >Terminar</a>
+    </div>
+</div>

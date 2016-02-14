@@ -1,0 +1,67 @@
+<div class="container">
+
+    <ul class="collapsible" data-collapsible="accordion">
+        <li>
+            <div class="collapsible-header"><i class="material-icons">import_export</i>Importar CSV</div>
+            <div class="collapsible-body">
+                <p>Importar CSV</p>
+                <div class="row" style="overflow:hidden">
+                    <div class="col s12">
+                        <ng-csv-import content="trabajadores.csv.content" header="trabajadores.csv.header" separator="trabajadores.separator" result="trabajadores.csv.result" encoding="trabajadores.encoding" accept="csv.accept"></ng-csv-import>
+                    </div>
+                </div>
+                <div class="divider"></div>
+
+                <div class="container">
+                    <div class="row" ng-show="trabajadores.csvCheck">
+                        <div class="input-field col s4" ng-repeat="value in trabajadores.values">
+                            <select ng-model="orderSelected" ng-options="excel for excel in trabajadores.csv.result[1]" >
+                                <!--<option value="" disabled selected>{{value}}?</option>-->
+                                <!--<option ng-repeat="(i,csv) in trabajadores.csv.result[1]" value="{{i}}" ng-click="console.log('clicked' + i)";>{{csv}}</option>-->
+                            </select>
+                            <label>{{value}}</label>
+                        </div>
+                    </div>
+                </div>
+                {{trabajadores.orderSelected}}
+                {{trabajadores.csv.result[1]}}
+                <div class="divider"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col s5 offset-s1">
+                            <button class="btn waves-effect waves-light black white-text right-align" type="submit" name="action">Submit
+                                <i class="material-icons right" >send</i>
+                            </button>
+                        </div>
+                        <div class ="col s2 offset-s3" ng-show="!trabajadores.csvCheck">
+                            <button class="btn waves-effect waves-light black white-text right-align" type="submit" name="action" onclick="test()" ng-click="trabajadores.csvCheck=true">Organizar CSV
+                                <i class="material-icons" >refresh</i>
+                            </button>
+                        </div>
+                        <div class ="col s2 offset-s3" ng-show="trabajadores.csvCheck">
+                            <button class="btn waves-effect waves-light black white-text right-align" type="submit" name="action" onclick="test()" ng-click="trabajadores.csvCheck=false">Confirmar CSV
+                                <i class="material-icons" >refresh</i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </li>
+    </ul>
+
+
+</div>
+<div class="row" ng-show="trabajadores.csvCheck">
+    <div class="input-field col s4" ng-repeat="value in trabajadores.values">
+        <select>
+            <option value="" disabled selected>{{value}}?</option>
+            <option ng-repeat="(i,csv) in trabajadores.csv.result[1]" value="{{i}}">{{csv}}</option>
+        </select>
+        <label>{{value}}</label>
+    </div>
+</div>
+
+</div>
