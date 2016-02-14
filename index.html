@@ -22,142 +22,29 @@
     <script src="js/balance.js"></script>
     <script src="js/trabajadoresController.js"></script>
     <script src="bower_components/angular-csv-import-tmp/dist/angular-csv-import.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
 </head>
 <body ng-controller="BalanceMainController as main">
 
-<nav class="black lighten-1" role="navigation">
-  <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Balance</a>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="Trabajadores.html">Trabajadores</a></li>
-      <li><a href="Contratacion.html">Contratación</a></li>
-      <li><a href="PagarTrabajadores.html">Pago</a></li>
-    </ul>
-    <ul class="right hide-on-med-and-down">
-      <li><a class="dropdown-button" data-beloworigin="true" href="Settings.html" data-activates="config">Configuracion<i class="material-icons right">arrow_drop_down</i></a></li>
-    </ul>
-    <ul id="config" class="dropdown-content">
-      <li><a href="#!">Contrato De Trabajo</a></li>
-      <li ng-click="settings.name=true;settings.selected=true"><a href="#!">Datos de Trabajadores</a></li>
-      <li class="divider"></li>
-      <li><a href="#!">Calculo y nominas</a></li>
-    </ul>
-
-    <ul id="nav-mobile" class="side-nav">
-      <li><a href="Trabajadores.html">Trabajadores</a></li>
-      <li><a href="Contratacion.html">Contratación</a></li>
-      <li><a href="PagarTrabajadores.html">Pago</a></li>
-      <li><a class="dropdown-button" href="Settings.html" data-activates="config" data-beloworigin="true">Configuracion<i class="material-icons right">arrow_drop_down</i></a></li>
-    </ul>
-
-    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-  </div>
-</nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center black-text">Balance de Trabajadores</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">Pagina para contratación y control de trabajadores</h5>
-      </div>
-      <div class="row center">
-        <a href="#contratación_nueva" id="new_contract" class="btn-large waves-effect waves-light black white-text">Nueva contratación</a>
-      </div>
-      <br><br>
-
-    </div>
-  </div>
+    <nav class="black lighten-1" role="navigation">
+        <div ng-include = "'/kike/content/navBar.html'"></div>
+    </nav>
 
 
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <a href="Trabajadores.html">
-        <div class="col s12 m4 block">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">Balance de trabajadores</h5>
-
-            <p class="light">Obtenga un balance de sus trabajadores, realize busquedas y filtre por cualquier campo deseado. Utilize las barras de navegacion superior o inferiores para volver atras o seleccionar otra pantalla</p>
-          </div>
-        </div>
-        </a>
-
-        <a href="Nomina.html">
-        <div class="col s12 m4 block">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Cierre del mes pago de nominas</h5>
-
-            <p class="light">Se le llevara a una pagina donde introduciendo datos ud podra calcular la nomina de sus trabajadores. Personalize sus busquedas y tratamiento por grupos.</p>
-          </div>
-        </div>
-        </a>
-
-        <a href="Settings.html">
-        <div class="col s12 m4 block">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Configuracion</h5>
-
-            <p class="light">Configuracion general del sitio, customizacion de elementos.<br>Elimine o inserte columnas para trabajadores o modifique el documento de contratacion</p>
-          </div>
-        </div>
-        </a>
-      </div>
-
-    </div>
-    <br><br>
-
-    <div class="section">
-
-    </div>
-  </div>
-<style>
-.block :hover{
-    background-color:#E8E8E8;
-    background-position: 0 -15px;
-    cursor:pointer;
-}
-</style>
-  <footer class="page-footer black white-text">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+    <div ng-include = "'/kike/content/navBarMobile.html'"></div>
+    <div ng-include="'/kike/content/index/IconsContainer.html'"></div>
+    <style>
+    .block :hover{
+        background-color:#E8E8E8;
+        background-position: 0 -15px;
+        cursor:pointer;
+    }
+    </style>
 
 
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://developersashole.com">DevelopersAshole</a>
-      </div>
-    </div>
-  </footer>
+    <div ng-include="content/footer.html"></div>
 
 
   <!--  Scripts-->

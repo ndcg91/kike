@@ -1,5 +1,5 @@
 (function(){
-    var app = angular.module("Balance",['ngCsvImport','ngStorage','xeditable']);
+    var app = angular.module("Balance",['ngCsvImport','ngStorage','xeditable','ngResource']);
 	
 	app.run(function(editableOptions) {
 		editableOptions.theme = 'default'; // bootstrap3 theme. Can be also 'bs2', 'default'
