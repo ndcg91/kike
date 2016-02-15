@@ -59,7 +59,7 @@ router.route('/values')
 		Values.find(function(err,values){
 			if (err)
 				res.send(err);
-			res.json(values)
+			res.json(values[0].parameters)
 		})
 	});
 
@@ -93,12 +93,26 @@ router.route('/value')
 	// create a value (accessed at POST http://localhost:8080/api/value)
 	.post(function(req, res) {
 		Values.findOne(function(err,values){
+			if (err)
+				res.send(err);
+			console.log(values);
+			if (values == null){
+				value = new Values()
+				value.parameters=[req.body.value];
+				value.save(function(err){
+					if (err)
+						res.send(err);
+					res.json({ message: 'value created!' });
+				});
+			}
+			else{
 			values.parameters.push(req.body.value);
-			values.update(function(err){
+			values.save(function(err){
 				if (err)
 					res.send(err);
 				res.json({ message: 'value created!' });
 			})
+			}
 		})
 	});
 
@@ -110,7 +124,11 @@ router.route('/worker/:worker_id')
 			if (err)
 				res.send(err);
 			worker.trabajador = req.body.trabajador;
-			res.json(worker)
+			worker.save(function(err){
+				if (err)
+					res.send(err);
+	                        res.json(worker)		
+			})
 		})
 
 	})
