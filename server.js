@@ -1,83 +1,150 @@
+
 var express             = require('express');
 var app                 = express();
 var bodyParser          = require('body-parser');
-var mongoose            = require('mongoose');
-var jwt                 = require('jsonwebtoken');
-var morgan              = require('morgan');
-var Trabajador		= require('./modules/trabajadores.js');
-var Nomina		= require('./modules/nomina.js');
-var Contrato            = require('./modules/contrato.js');
-var Parameter		= require('./modules/parameters.js');
-mongoose.connect('mongodb://kike:TemporaL1718@127.0.0.1:27017/kike');
+var mongoose   = require('mongoose');
+var Worker = require('./modules/trabajadores.js');
+var Values = require('./modules/parameters.js');
+mongoose.connect('mongodb://kike:TemporaL1718@apollo.modulusmongo.net:27017/h8epehaV');// connect to our database
+
+// configure app to use bodyParser()
+// this will let us get the data from a POST
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(morgan("dev"));
 
+var port = process.env.PORT || 8080;        // set our port
 
-app.use(function(req, res, next) {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type, Authorization, Access-Control-Allow-Origin, Access-Control-Allow-Headers,X-Requested-With, Content-Type, Accept');
-    next();
-});
-
-
-var port = process.env.PORT || 8080;
-
-
+// ROUTES FOR OUR API
+// =============================================================================
 var router = express.Router();
 
+// middleware to use for all requests
 router.use(function(req, res, next) {
-//res.header('Access-Control-Allow-Origin', 'http://128.199.62.16');
-//res.header('Access-Control-Allow-Methods', 'GET, POST');
-//res.header('Access-Control-Allow-Headers', 'X-Requested-With,content-type, Authorization, Access-Control-Allow-Origin, Acc$
-console.log("algo ha pasado");
-next();
+	// do logging
+	console.log('Something is happening.');
+	next(); // make sure we go to the next routes and don't stop here
 });
 
+
+// test route to make sure everything is working (accessed at GET http://localhost:8080/api)
 router.get('/', function(req, res) {
-        res.json({message: 'ok api set'});
+	res.json({ message: 'hooray! welcome to our api!' });
 });
 
-router.route('/trabajadores/setParams')
-	.post(function(req,res){
-		var params = req.body.params
-		var newParam = new Parameter();
-		newParam.parameters = req.body.params
-		newParam.save(function(err,savedParams){
-			if (err) res.send(err);
-			res.send({message:"parameters updated"});
+//GET
+router.route('/workers')
+	//get all workers
+	.get(function(req,res){
+		Worker.find(function(err,workers){
+			if (err)
+				res.send(err);
+			res.json(workers)
+		})
+	});
+
+router.route('/workers/:worker_id')
+	//get one worker
+	.get(function(req,res){
+		Worker.findById(req.params.worker_id, function(err,worker){
+			if (err)
+				res.send(err);
+			res.json(worker)
 		})
 	});
 
 
-router.route('/trabajadores/getParams')
-        .get(function(req,res){
-                Parameter.findOne({},function(err,param){
-			if (err) res.send(err);
-			res.send(param);
-		});
-        });
-
-router.route('/trabajadores/add')
-	.post(function(req,res){
-		var param = "";
-		var trabajador = new Trabajador();
-		trabajador.trabajador = req.body.trabajador;
-		trabajador.save(function(err,trabajador){
-			if (err) res.send(err);
-			res.send(trabajador);
-		});
+router.route('/values')
+	//get all values
+	.get(function(req,res){
+		Values.find(function(err,values){
+			if (err)
+				res.send(err);
+			res.json(values[0].parameters)
+		})
 	});
 
-router.route('/trabajadores/get')
-        .get(function(req,res){
-                Trabajador.find({},function(err,trabajador){
-			if (err) res.send(err)
-			res.send(trabajador);
-		})
-        });
+// more routes for our API will happen here
 
-app.use('/api',router);
+// REGISTER OUR ROUTES -------------------------------
+// all of our routes will be prefixed with /api
+app.use('/api', router);
+
+
+
+
+//POST CREATE
+router.route('/worker')
+	// create a worker (accessed at POST http://localhost:8080/api/worker)
+	.post(function(req, res) {
+
+		var worker = new Worker();      // create a new instance of the Bear model
+		worker.trabajador = req.body.trabajador;  // set the bears name (comes from the request)
+
+		// save the bear and check for errors
+		worker.save(function(err) {
+			if (err)
+				res.send(err);
+			res.json({ message: 'worker created!' });
+		});
+
+	});
+
+router.route('/value')
+	// create a value (accessed at POST http://localhost:8080/api/value)
+	.post(function(req, res) {
+		Values.findOne(function(err,values){
+			if (err)
+				res.send(err);
+			console.log(values);
+			if (values == null){
+				value = new Values()
+				value.parameters=[req.body.value];
+				value.save(function(err){
+					if (err)
+						res.send(err);
+					res.json({ message: 'value created!' });
+				});
+			}
+			else{
+			values.parameters.push(req.body.value);
+			values.save(function(err){
+				if (err)
+					res.send(err);
+				res.json({ message: 'value created!' });
+			})
+			}
+		})
+	});
+
+//PUT EDIT
+router.route('/worker/:worker_id')
+	// create a worker (accessed at POST http://localhost:8080/api/worker)
+	.put(function(req, res) {
+		Worker.findById(req.params.worker_id, function(err,worker){
+			if (err)
+				res.send(err);
+			worker.trabajador = req.body.trabajador;
+			worker.save(function(err){
+				if (err)
+					res.send(err);
+	                        res.json(worker)		
+			})
+		})
+
+	})
+	.delete(function(req, res) {
+	Worker.remove({
+		_id: req.params.worker_id
+	}, function(err, bear) {
+		if (err)
+			res.send(err);
+		res.json({ message: 'Successfully deleted' });
+	});
+});
+
+//PUT EDIT
+
+// START THE SERVER
+// =============================================================================
 app.listen(port);
-console.log("listening on port 8080");
+console.log('Magic happens on port ' + port);

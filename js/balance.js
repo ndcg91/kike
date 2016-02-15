@@ -1,6 +1,9 @@
 (function(){
-    var app = angular.module("Balance",['ngCsvImport']);
-
+    var app = angular.module("Balance",['ngCsvImport','ngStorage','xeditable','ngResource']);
+	
+	app.run(function(editableOptions) {
+		editableOptions.theme = 'default'; // bootstrap3 theme. Can be also 'bs2', 'default'
+	});
     //Added for CORS Support
     app.config(['$httpProvider',function($httpProvider){
         $httpProvider.defaults.useXDomain = true;
@@ -9,7 +12,7 @@
 
 
     //Balance Controller
-    app.controller("BalanceMainController",['$http','$location','$window','$timeout','$scope',function($http,$location,$window,$timeout,$scope){
+    app.controller("BalanceMainController",['$http','$location','$window','$timeout','$scope','$localStorage',function($http,$location,$window,$timeout,$scope,$localStorage){
         //$window.localStorage.clear();
         var self=this; //to access scope within callbacks
 

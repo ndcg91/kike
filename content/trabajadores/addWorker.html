@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col s2 offset-s5">
+
+        <a class="btn-floating btn-large waves-effect waves-light red" ng-click="trabajadores.adding = true" ng-show="!trabajadores.adding" onclick=" $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });"><i class="material-icons">add</i></a>
+        <a class="btn-floating btn-large waves-effect waves-light green" ng-click="trabajadores.adding = false;trabajadores.addWorker(trabajadores.newWorker)" ng-show="trabajadores.adding"><i class="material-icons">done</i></a>
+
+    </div>
+</div>

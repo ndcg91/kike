@@ -1,0 +1,62 @@
+<h3 class="center-align" style="padding-top: 20px;padding-bottom: 20px">Datos de los trabajadores</h3>
+<table class="responsive-table">
+    <thead>
+    <tr >
+        <th ng-repeat="val in trabajadores.values">
+            {{val.value}}
+        </th>
+        <th>
+            Identificador
+        </th>
+        <th>
+            Editar
+        </th>
+        <th>
+            Borrar
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="data in trabajadores.worker | filter:workerFilter:strict track by $index">
+        <td ng-repeat="value in trabajadores.values">
+            <div class="container" ng-show="!data.editingWorker">
+                {{data[value.value]}}
+            </div>
+            <div class="input-field col s4" ng-show="data.editingWorker">
+                <input value="{{data[value.value]}}" id="{{data[value.value]}}_id" type="{{value.type == 'date' && 'text' || value.type}}" class="validate" ng-class="{datepicker: value.type == 'date'}" ng-model="data[value.value]" novalidate formnovalidate>
+                <label class="active" for="{{data[value.value]}}_id">{{value.value}}</label>
+            </div>
+        </td>
+        <td>
+            <div class="container"  ng-show="!data.editingWorker">
+                {{data.uniqueValue}}
+            </div>
+            <div class="input-field col s4" ng-show="data.editingWorker">
+                <input value="{{data.uniqueValue}}" id="{{data.uniqueValue}}_id" type="text" class="validate" ng-model="data.uniqueValue" novalidate formnovalidate required>
+                <label class="active" for="{{data.uniqueValue}}_id">{{data.uniqueValue}}</label>
+            </div>
+        </td>
+        <td>
+            <p>
+                <input type="checkbox" id="{{data}}_id" ng-click="trabajadores.toggleEditing(data)" onclick=" $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });" />
+                <label for="{{data}}_id">Editar</label>
+            </p>
+        </td>
+        <td ng-click="trabajadores.deleteWorker(data)">
+            <i class="material-icons center black-text hoverable"  >delete</i>
+        </td>
+    </tr>
+    <tr ng-show="trabajadores.adding">
+        <td ng-repeat="v in trabajadores.values">
+            <input id="adding_worker" type="{{v.type == 'date' && 'text' || v.type}}" class="validate" ng-class="{datepicker: v.type == 'date'}" ng-model="trabajadores.newWorker[v.value]"  novalidate formnovalidate>
+            <label class="active" for="adding_worker">{{v.value}}</label>
+        </td>
+        <td>
+            <input value="{{trabajadores.newWorker.uniqueValue}}" type="text" class="validate" ng-model="data.uniqueValue" novalidate formnovalidate required>
+        </td>
+    </tr>
+    </tbody>
+</table>
