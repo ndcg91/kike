@@ -73,12 +73,12 @@ app.use('/api', router);
 
 
 //POST CREATE
-router.route('/worker')
+router.route('/workers')
 	// create a worker (accessed at POST http://localhost:8080/api/worker)
 	.post(function(req, res) {
-
+		console.log(req.body.trabajador);
 		var worker = new Worker();      // create a new instance of the Bear model
-		worker.trabajador = req.body.trabajador;  // set the bears name (comes from the request)
+		worker.trabajador = JSON.parse(req.body.trabajador);  // set the bears name (comes from the request)
 
 		// save the bear and check for errors
 		worker.save(function(err) {
@@ -117,7 +117,7 @@ router.route('/value')
 	});
 
 //PUT EDIT
-router.route('/worker/:worker_id')
+router.route('/workers/:worker_id')
 	// create a worker (accessed at POST http://localhost:8080/api/worker)
 	.put(function(req, res) {
 		Worker.findById(req.params.worker_id, function(err,worker){
