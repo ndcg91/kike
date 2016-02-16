@@ -6,9 +6,6 @@
             {{val.value}}
         </th>
         <th>
-            Identificador
-        </th>
-        <th>
             Editar
         </th>
         <th>
@@ -17,7 +14,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="data in trabajadores.worker | filter:workerFilter:strict track by $index">
+    <tr ng-repeat="data in trabajadores.workers | filter:workerFilter:strict track by $index">
         <td ng-repeat="value in trabajadores.values">
             <div class="container" ng-show="!data.editingWorker">
                 {{data[value.value]}}
@@ -27,15 +24,7 @@
                 <label class="active" for="{{data[value.value]}}_id">{{value.value}}</label>
             </div>
         </td>
-        <td>
-            <div class="container"  ng-show="!data.editingWorker">
-                {{data.uniqueValue}}
-            </div>
-            <div class="input-field col s4" ng-show="data.editingWorker">
-                <input value="{{data.uniqueValue}}" id="{{data.uniqueValue}}_id" type="text" class="validate" ng-model="data.uniqueValue" novalidate formnovalidate required>
-                <label class="active" for="{{data.uniqueValue}}_id">{{data.uniqueValue}}</label>
-            </div>
-        </td>
+
         <td>
             <p>
                 <input type="checkbox" id="{{data}}_id" ng-click="trabajadores.toggleEditing(data)" onclick=" $('.datepicker').pickadate({
@@ -46,7 +35,7 @@
             </p>
         </td>
         <td ng-click="trabajadores.deleteWorker(data)">
-            <i class="material-icons center black-text hoverable"  >delete</i>
+            <i class="fa fa-trash fa-2x"></i>
         </td>
     </tr>
     <tr ng-show="trabajadores.adding">

@@ -13,6 +13,7 @@
 
     <script src="js/jquery-2.1.4.js"></script>
     <script src="js/angular.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-resource.min.js"></script>
     <script src="bower_components/ngstorage/ngStorage.min.js"></script>
 	<link href="bower_components/angular-xeditable/dist/css/xeditable.css" rel="stylesheet">
 	<script src="bower_components/angular-xeditable/dist/js/xeditable.js"></script>
@@ -21,35 +22,13 @@
     <script src="js/balance.js"></script>
     <script src="js/settingsController.js"></script>
     <script src="bower_components/angular-csv-import-tmp/dist/angular-csv-import.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 </head>
 <body ng-controller="SettingController as settings">
 
 <nav class="black lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Balance</a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="Trabajadores.html">Trabajadores</a></li>
-            <li><a href="Contratacion.html">Contratación</a></li>
-            <li><a href="PagarTrabajadores.html">Pago</a></li>
-        </ul>
-        <ul class="right hide-on-med-and-down">
-            <li><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="config">Configuracion<i class="material-icons right">arrow_drop_down</i></a></li>
-        </ul>
-        <ul id="config" class="dropdown-content">
-            <li><a href="#!">Contrato De Trabajo</a></li>
-            <li ng-click="settings.name=true;settings.selected=true"><a href="#!">Datos de Trabajadores</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">Calculo y nominas</a></li>
-        </ul>
-
-        <ul id="nav-mobile" class="side-nav">
-            <li><a href="Trabajadores.html">Trabajadores</a></li>
-            <li><a href="Contratacion.html">Contratación</a></li>
-            <li><a href="PagarTrabajadores.html">Pago</a></li>
-            <li><a class="dropdown-button" href="#!" data-activates="config" data-beloworigin="true">Configuracion<i class="material-icons right">arrow_drop_down</i></a></li>
-        </ul>
-
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
+    <div ng-include = "'/kike/content/navBar.html'"></div>
 </nav>
 
 
@@ -75,7 +54,7 @@
         <div class="row">
             <div class="col s12 m4  hoverable" ng-click="settings.hireShow=true;settings.selected=true">
                 <div class="icon-block">
-                    <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+                    <h2 class="center light-blue-text"><i class="fa fa-briefcase"></i></h2>
                     <h5 class="center">Configuracion Contrato de Trabajo</h5>
 
                     <p class="light">Datos del contrato de trabajo, nominas y formulario. Añade o quite entradas, tenga en cuenta que las variables que puede poner deberan de ser añadidas antes en datos de trabajadores</p>
@@ -84,7 +63,7 @@
 
             <div class="col s12 m4  hoverable" ng-click="settings.name=true;settings.selected=true">
                 <div class="icon-block">
-                    <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+                    <h2 class="center light-blue-text"><i class="fa fa-users"></i></h2>
                     <h5 class="center">Dato de Trabajadores</h5>
 
                     <p class="light">Edicion de los datos pedidos a los Trabajadores, como nombre, apellidos, DNI</p>
@@ -93,7 +72,7 @@
 
             <div class="col s12 m4  hoverable"ng-click="settings.nominasShow=true;settings.selected=true">
                 <div class="icon-block">
-                    <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+                    <h2 class="center light-blue-text"><i class="fa fa-calculator"></i></h2>
                     <h5 class="center">Calculo y Nóminas</h5>
 
                     <p class="light">Configuracion de Nóminas</p>
