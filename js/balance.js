@@ -26,4 +26,25 @@
             controllerAs: "balance"
         }
     });
+    app.factory("Worker",function($resource){
+        return $resource("http://128.199.62.16:8080/api/workers/:id",{id:'@id'},{
+            update: {method: 'PUT'},
+            save: {method: 'POST'},
+            query: {method: 'GET', isArray: true},
+            get: {method: 'GET'},
+            delete: {method: 'DELETE'}
+        });
+    });
+    app.factory("Parameter",function($resource){
+        return $resource("http://128.199.62.16:8080/api/values/:id",{id:'@_id'},{
+            update: {method: 'PUT'},
+            save: {method: 'POST'},
+            query: {method: 'GET', isArray: true},
+            get: {method: 'GET'},
+            delete: {method: 'DELETE',params:{id:'@_id'}}
+        });
+    });
+
+
+
 })();

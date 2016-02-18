@@ -3,9 +3,10 @@
  */
 (function(){
     var app = angular.module("Balance");
-    app.controller("TrabajadoresController",['$http','$location','$window','$timeout','$scope','$localStorage',function($http,$location,$window,$timeout,$scope,$localStorage){
+    app.controller("TrabajadoresController",['$http','$location','$window','$timeout','$scope','$localStorage','Worker','Parameter',function($http,$location,$window,$timeout,$scope,$localStorage,Worker,Parameter){
         var self=this; //to access scope within callbacks
-
+        this.workers = [];
+        this.values = [];
 
 
 
@@ -40,56 +41,82 @@
 
         //WORKER PROPERTIES
         // this.values = [];
-        this.newWorker = new Object();
-        this.workers = [];
-        this.values = [];
+        this.newWorker = {};
+        this.editingWorker = false;
+
+        Worker.query(function(data){
+            data.forEach(function(object){
+                var id = object._id;
+                var worker = object.trabajador
+                worker.id = id;
+                self.workers.push(worker);
+            });
+        });
+        Parameter.query(function(data){
+            data.forEach(function(object){
+                self.values.push(object);
+            });
+            console.log(self.values);
+        });
 
         //WORKER METHODS
         this.getParams = function(){
-            self.values=$localStorage.WorkerParams;
+            Parameter.query(function(data){
+                data.forEach(function(object){
+                    self.values.push(object);
+                });
+                console.log(self.values);
+            });
         };
 
         this.getWorkers = function(){
-            if ($localStorage.workers == undefined){
-                $localStorage.workers = [];
-            }
-            self.workers = $localStorage.workers;
+            Worker.query(function(data){
+                self.workers = [];
+                data.forEach(function(object){
+                    var id = object._id;
+                    var worker = object.trabajador;
+                    worker.id = id;
+                    self.workers.push(worker);
+                });
+                $('.collapsible').collapsible({});
+            });
         };
-
         this.addWorker = function(workerToAdd){
-            $localStorage.workers.push(workerToAdd);
-            self.newWorker = [];
-            self.getWorkers();
+            console.log(workerToAdd);
+            Worker.save({trabajador:workerToAdd},function(data){
+                self.getWorkers();
+            });
+            self.newWorker = {};
         };
-
         this.deleteWorker = function(workerToDelete){
             console.log("deleting");
             console.log(workerToDelete);
             var tempArray = [];
-            self.worker.forEach(function(worker){
+            self.workers.forEach(function(worker){
                 console.log(worker);
                 if (worker != workerToDelete){
                     tempArray.push(worker);
                 }
             });
-            $localStorage.workers = tempArray;
-            self.getWorkers();
+            workers = tempArray;
+            Worker.delete(workerToDelete,function(data){
+                self.getWorkers();
+            });
         };
 
-        this.updateWorkers = function(){
-            $localStorage.workers = self.worker;
-        };
 
-        this.editingWorker = false;
         this.toggleEditing = function(worker){
             if (worker.editingWorker){
                 worker.editingWorker = false;
+                Worker.update(worker);
             }
             else {
                 worker.editingWorker = true;
             }
         };
-
+        this.csvOrganize = function(){
+            console.log("changed");
+        };
         var init = function () {
             self.getParams();
             self.getWorkers();
@@ -97,6 +124,6 @@
             // and fire search in case its value is not empty
         };
 // and fire it after definition
-        init();
+       // init();
     }]);
 })();
