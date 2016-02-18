@@ -1,5 +1,21 @@
 <div>
-
+    <div class="row">
+        <div class="col s8">
+            <div class="row">
+                <div class="col s6" ng-repeat="value in parameters">
+                    {{worer[value]}}
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div ng-repeat="fila in filas">
+            <span class="fila">{{fila.number}}</span>
+                <div ng-repeat="columna in fila.columnas">
+                    <span class="columna">{{columna.value}}</span> 
+                </div>
+            </div>
+        </div>
+    </div>
 Nombre:{{worker.nombre}}
 Id:{{worker.id}}
 LastName:{{worker.apellidos}}

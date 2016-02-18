@@ -1,4 +1,4 @@
-(function(){
+(function () {
     var app = angular.module("Balance",['ngCsvImport','ngStorage','xeditable','ngResource','ngRoute']);
 	
 	app.run(function(editableOptions) {
