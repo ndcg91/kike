@@ -32,7 +32,7 @@
             update: {method: 'PUT'},
             save: {method: 'POST'},
             query: {method: 'GET', isArray: true},
-            get: {method: 'GET'},
+            get: {method: 'GET', isArray: false},
             delete: {method: 'DELETE'}
         });
     });
@@ -50,11 +50,16 @@
     $routeProvider.
       when('/trabajadores', {
         templateUrl: 'partials/Trabajadores.html',
-        controller: 'TrabajadoresController'
+        controller: 'TrabajadoresController as trabajadores'
       }).
-      when('/phones/:phoneId', {
-        templateUrl: 'partials/phone-detail.html',
-        controller: 'PhoneDetailCtrl'
+      when('/settings', {
+        templateUrl: 'partials/Settings.html',
+        controller: 'SettingController as settings'
+      }).
+
+      when('/worker/:workerID', {
+        templateUrl: 'partials/worker.html',
+        controller: 'WorkerController'
       }).
        when('/home', {
         templateUrl: 'partials/indexPage.html',

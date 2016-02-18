@@ -51,6 +51,7 @@
                 worker.id = id;
                 self.workers.push(worker);
             });
+	    console.log(self.workers);
         });
         Parameter.query(function(data){
             data.forEach(function(object){
@@ -119,8 +120,8 @@
         };
         var init = function () {
 	    console.log("init called");
-            self.getParams();
-            self.getWorkers();
+            //self.getParams();
+            //self.getWorkers();
             // check if there is query in url
             // and fire search in case its value is not empty
         };

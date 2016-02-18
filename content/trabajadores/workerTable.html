@@ -11,6 +11,9 @@
         <th>
             Borrar
         </th>
+	<th>
+            Acceder
+        </th>
     </tr>
     </thead>
     <tbody>
@@ -37,6 +40,10 @@
         <td ng-click="trabajadores.deleteWorker(data)">
             <i class="fa fa-trash fa-2x"></i>
         </td>
+	  <td>
+                <a href="#/worker/{{data.id}}">Acceder</a>
+        </td>
+
     </tr>
     <tr ng-show="trabajadores.adding">
         <td ng-repeat="v in trabajadores.values">
