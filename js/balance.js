@@ -18,14 +18,7 @@
 	console.log("balance controller");
 
     }]);
-    app.directive('testDirective',function(){
-        return{
-            restrict: 'E',
-            templateUrl: "templates/testDirective.html",
-            controller: "BalanceController",
-            controllerAs: "balance"
-        }
-    });
+
     app.config(function($routeProvider) {
     $routeProvider.
       when('/trabajadores', {
