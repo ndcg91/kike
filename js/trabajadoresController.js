@@ -5,9 +5,9 @@
     var app = angular.module("Balance");
     app.controller("TrabajadoresController",['$http','$location','$window','$timeout','$scope','$localStorage',function($http,$location,$window,$timeout,$scope,$localStorage){
         var self=this; //to access scope within callbacks
-
-
-
+	console.log("trabajadores controller");
+	//this.getParams();
+        //this.getWorkers();
 
         //$window.localStorage.clear();
 
@@ -91,6 +91,7 @@
         };
 
         var init = function () {
+	    console.log("init called");
             self.getParams();
             self.getWorkers();
             // check if there is query in url

@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Kike Web</title>
+  <title>Starter Template - Materialize</title>
 
   <!-- CSS  -->
   <link href="bower_components/material-design-icons/iconfont/MaterialIcons-Regular.woff" rel="stylesheet">
@@ -13,12 +13,10 @@
 
 
     <script src="js/jquery-2.1.4.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-resource.min.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="js/angular.min.js"></script>
     <script src="bower_components/ngstorage/ngStorage.min.js"></script>
     <script src="bower_components/Materialize/bin/materialize.js"></script>
-    <script src="bower_components/angular-xeditable/dist/js/xeditable.js"></script>
+	<script src="bower_components/angular-xeditable/dist/js/xeditable.js"></script>
     <script src="bower_components/Materialize/bin/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="js/balance.js"></script>
@@ -35,8 +33,16 @@
     </nav>
 
 
+    <div ng-include = "'/kike/content/navBarMobile.html'"></div>
+    <div ng-include="'/kike/content/index/IconsContainer.html'"></div>
+    <style>
+    .block :hover{
+        background-color:#E8E8E8;
+        background-position: 0 -15px;
+        cursor:pointer;
+    }
+    </style>
 
-    <div ng-view></div> 
 
     <div ng-include="content/footer.html"></div>
 
