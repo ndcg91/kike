@@ -5,12 +5,12 @@
     var app = angular.module("Balance");
     app.controller("TrabajadoresController",['$http','$location','$window','$timeout','$scope','$localStorage','Worker','Parameter',function($http,$location,$window,$timeout,$scope,$localStorage,Worker,Parameter){
         var self=this; //to access scope within callbacks
+
         this.workers = [];
         this.values = [];
 
 
-
-        //$window.localStorage.clear();
+	console.log("trabajadores controller");
 
 
         //MARK: CSV IMPORT PROPERTIES METHODS
@@ -40,7 +40,7 @@
 
 
         //WORKER PROPERTIES
-        // this.values = [];
+       
         this.newWorker = {};
         this.editingWorker = false;
 
@@ -118,6 +118,7 @@
             console.log("changed");
         };
         var init = function () {
+	    console.log("init called");
             self.getParams();
             self.getWorkers();
             // check if there is query in url

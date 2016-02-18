@@ -1,0 +1,61 @@
+<div class="content" ng-show="!settings.selected">
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <br><br>
+        <h1 class="header center black-text">Configuracion General</h1>
+        <div class="row center">
+            <h5 class="header col s12 light">Pagina para customizacion de datos y control de plantillas</h5>
+        </div>
+
+        <br><br>
+
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="section">
+
+        <!--   Icon Section   -->
+        <div class="row">
+            <div class="col s12 m4  hoverable" ng-click="settings.hireShow=true;settings.selected=true">
+                <div class="icon-block">
+                    <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+                    <h5 class="center">Configuracion Contrato de Trabajo</h5>
+
+                    <p class="light">Datos del contrato de trabajo, nominas y formulario. Añade o quite entradas, tenga en cuenta que las variables que puede poner deberan de ser añadidas antes en datos de trabajadores</p>
+                </div>
+            </div>
+
+            <div class="col s12 m4  hoverable" ng-click="settings.name=true;settings.selected=true">
+                <div class="icon-block">
+                    <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+                    <h5 class="center">Dato de Trabajadores</h5>
+
+                    <p class="light">Edicion de los datos pedidos a los Trabajadores, como nombre, apellidos, DNI</p>
+                </div>
+            </div>
+
+            <div class="col s12 m4  hoverable"ng-click="settings.nominasShow=true;settings.selected=true">
+                <div class="icon-block">
+                    <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+                    <h5 class="center">Calculo y Nóminas</h5>
+
+                    <p class="light">Configuracion de Nóminas</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+</div>
+</div>
+
+<edit-trabajadores-values></edit-trabajadores-values>
+<edit-hire-values></edit-hire-values>
+<edit-nomina-values></edit-nomina-values>
+

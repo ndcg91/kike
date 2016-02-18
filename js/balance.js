@@ -1,5 +1,5 @@
 (function(){
-    var app = angular.module("Balance",['ngCsvImport','ngStorage','xeditable','ngResource']);
+    var app = angular.module("Balance",['ngCsvImport','ngStorage','xeditable','ngResource','ngRoute']);
 	
 	app.run(function(editableOptions) {
 		editableOptions.theme = 'default'; // bootstrap3 theme. Can be also 'bs2', 'default'
@@ -15,7 +15,7 @@
     app.controller("BalanceMainController",['$http','$location','$window','$timeout','$scope','$localStorage',function($http,$location,$window,$timeout,$scope,$localStorage){
         //$window.localStorage.clear();
         var self=this; //to access scope within callbacks
-
+	console.log("balance controller");
 
     }]);
     app.directive('testDirective',function(){
@@ -26,6 +26,7 @@
             controllerAs: "balance"
         }
     });
+
     app.factory("Worker",function($resource){
         return $resource("http://128.199.62.16:8080/api/workers/:id",{id:'@id'},{
             update: {method: 'PUT'},
@@ -45,6 +46,25 @@
         });
     });
 
+    app.config(function($routeProvider) {
+    $routeProvider.
+      when('/trabajadores', {
+        templateUrl: 'partials/Trabajadores.html',
+        controller: 'TrabajadoresController'
+      }).
+      when('/phones/:phoneId', {
+        templateUrl: 'partials/phone-detail.html',
+        controller: 'PhoneDetailCtrl'
+      }).
+       when('/home', {
+        templateUrl: 'partials/indexPage.html',
+        controller: 'BalanceMainController'
+      }).
 
-
+      otherwise({
+        redirectTo: '/home'
+      });
+  });
+    
 })();
+
